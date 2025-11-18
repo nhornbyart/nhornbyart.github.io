@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Remove default browser margins and padding, and hide any overflow */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures <body> takes the full height of the viewport */
+    width: 100%;
+    overflow: hidden; /* This is the key to preventing scrolling */
+  }
+
+  /* Ensure the image fills the entire screen using viewport units */
+  img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill; /* or 'cover' to maintain aspect ratio and crop if necessary */
+    display: block; /* Helps with potential spacing issues */
+  }
+</style>
+</head>
+<body>
+<img src="me.jpeg" alt="My Image">
+</body>
+</html>
