@@ -50,7 +50,7 @@
 					</div>
 					<div class="stat">
 						<span class="label">Current Roles</span>
-						<span class="value">IT Intern · FRC Programmer</span>
+						<span class="value">IT Intern · Systems Builder</span>
 					</div>
 					<div class="stat">
 						<span class="label">Next</span>
@@ -73,6 +73,11 @@
 					<p class="meta">Compiler + IR</p>
 					<p>Designing a compiled language that targets ChanceCode IR for flexible backend compilation and custom assembly outputs.</p>
 				</article>
+				<article class="card">
+					<h3>NativeAOT + OS Chain</h3>
+					<p class="meta">RedLineOS · AquaniteOS</p>
+					<p>Building kernels, NativeAOT tooling (nativeaot-patcher, EarlyBirdPreprocessor, HydrixAssembler), and loaders such as StarElf.</p>
+				</article>
 			</div>
 		</section>
 
@@ -87,6 +92,10 @@
 					<strong>RedLineOS + AquaniteOS</strong>
 					<p>Iterating on custom kernels, bootloaders, and supporting toolchains (EarlyBirdPreprocessor, TestCoreLib, HydrixAssembler).</p>
 				</li>
+				<li>
+					<strong>BSlash backend plumbing</strong>
+					<p>Wiring the 32-bit BSlash architecture through CEnhanced, ChanceCode, and bespoke .bas assembly flows.</p>
+				</li>
 			</ul>
 		</section>
 
@@ -94,24 +103,24 @@
 			<h2 class="section-title">Featured GitHub Projects</h2>
 			<div class="cards">
 				<article class="card">
-					<h3>CEnhanced → CHance</h3>
-					<p>Capstone-grade compiler that emits ChanceCode IR before lowering to arbitrary assembly backends.</p>
+					<h3>CEnhanced + CHance</h3>
+					<p>Capstone-grade compiler that emits ChanceCode IR, now capable of flagging custom backends like BSlash.</p>
 					<p class="meta"><a href="https://github.com/AzureianGH/CEnhanced" target="_blank" rel="noopener">github.com/AzureianGH/CEnhanced</a></p>
 				</article>
 				<article class="card">
 					<h3>ChanceCode</h3>
-					<p>Intermediate representation + backend adapters that make CHance portable across architectures.</p>
+					<p>Intermediate representation + backend adapters that keep the IR portable, with hooks for custom emitters.</p>
 					<p class="meta"><a href="https://github.com/AzureianGH/ChanceCode" target="_blank" rel="noopener">github.com/AzureianGH/ChanceCode</a></p>
 				</article>
 				<article class="card">
-					<h3>libquail</h3>
-					<p>Lightweight robotics/controls helpers designed to slot into teams that need batteries-included utilities.</p>
-					<p class="meta"><a href="https://github.com/AzureianGH/libquail" target="_blank" rel="noopener">github.com/AzureianGH/libquail</a></p>
+					<h3>nativeaot-patcher</h3>
+					<p>Zarlo's NativeAOT patcher fork that injects fixes so experimental runtimes build on my dev boxes.</p>
+					<p class="meta"><a href="https://github.com/AzureianGH/nativeaot-patcher" target="_blank" rel="noopener">github.com/AzureianGH/nativeaot-patcher</a></p>
 				</article>
 				<article class="card">
-					<h3>NAS / NASDIS</h3>
-					<p>Assembler + disassembler pair that power other emulator efforts such as NEMU and barc-lang.</p>
-					<p class="meta"><a href="https://github.com/AzureianGH/NAS" target="_blank" rel="noopener">github.com/AzureianGH/NAS</a></p>
+					<h3>RedLineOS chain</h3>
+					<p>Generation 4 of my OS lineage (RedLineOS, AquaniteOS, HydrixOS) with bootloaders, assemblers, and emulator support.</p>
+					<p class="meta"><a href="https://github.com/AzureianGH/RedLineOS" target="_blank" rel="noopener">github.com/AzureianGH/RedLineOS</a></p>
 				</article>
 			</div>
 		</section>

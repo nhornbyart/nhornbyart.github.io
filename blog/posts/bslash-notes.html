@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Notes from auditing the BSlash backend path in CEnhanced and ChanceCode.">
+  <title>BSlash backend plumbing · Nathan Hornby</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a class="logo" href="/">NH</a>
+      <nav>
+        <a data-nav href="/">Home</a>
+        <a data-nav href="/about.html">About</a>
+        <a data-nav href="/experience.html">Experience</a>
+        <a data-nav href="/blog/">Blog</a>
+        <a data-nav href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <article class="section post-content">
+      <p class="meta">November 19, 2025 · Compilers · BSlash</p>
+      <h1>Tracing the BSlash backend plumbing</h1>
+      <p>I spent today auditing how far my new 32-bit BSlash architecture flows through <code>CEnhanced</code> and
+        <code>ChanceCode</code>. Here's where the support currently lives and what's still missing.</p>
+
+      <h2>CEnhanced knows about BSlash</h2>
+      <p>In <code>CEnhanced/src/main.c</code> the <code>TargetArch</code> enum now includes <code>ARCH_BSLASH</code>, the CLI
+        understands <code>-bslash</code>, and the project parser accepts <code>backend=bslash</code>. Selecting it does a few
+        specific things:</p>
+      <ul>
+        <li>Forces <code>stop_after_asm</code>, so the pipeline always halts after emitting assembly.</li>
+        <li>Swaps the assembly extension to <code>.bas</code> (matching my "BSlash Assembly" shorthand) and lets you override
+          the output path with <code>.bas</code> or <code>.s</code>.</li>
+        <li>Calls ChanceCodec with <code>--backend bslash</code> during the <code>codegen_ccb_write_module</code> path, sharing the
+          same optimization flags as x86/arm64.</li>
+        <li>Skips the system assembler/object stages because there is no canonical BSlash toolchain yet.</li>
+      </ul>
+      <p>That covers the plumbing from CE source → CCB → BAS, which is already enough for hand-testing instructions on my
+        emulator.</p>
+
+      <h2>ChanceCode repo gap</h2>
+      <p>The public <code>ChanceCode/src</code> tree (loader, backend registry, CLI) doesn't actually register a BSlash backend.
+        There are zero <code>"bslash"</code> strings outside of workspace settings, so the CLI will currently report "unknown
+        backend 'bslash'" unless you plug in an external emitter. The binary I run locally includes a custom backend, but I still
+        need to upstream/ship it so others can reproduce the flow.</p>
+
+      <h2>Next steps</h2>
+      <ul>
+        <li>Codify the BSlash backend inside the ChanceCode repo (probably as <code>src/backend_bslash.c</code>) so the CLI can
+          list and invoke it without private patches.</li>
+        <li>Add a tiny assembler or translator that turns the emitted <code>.bas</code> into something my emulator consumes without
+          manual copy/paste.</li>
+        <li>Document the calling convention + register file in the repo so contributors know how <code>-bslash</code> is supposed
+          to behave.</li>
+      </ul>
+      <p>Once those land I'll feel confident pointing other folks at the BSlash flow without a long README of caveats.</p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <small>© <span data-current-year></span> Nathan Hornby</small>
+  </footer>
+</body>
+
+</html>

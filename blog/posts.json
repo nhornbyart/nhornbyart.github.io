@@ -5,5 +5,12 @@
     "date": "2025-11-18",
     "summary": "A quick note about the new site, my IT internship, and the CHance language toolchain.",
     "tags": ["Ops", "Compilers"]
+  },
+  {
+    "title": "BSlash backend plumbing",
+    "slug": "bslash-notes",
+    "date": "2025-11-19",
+    "summary": "Audit of how CEnhanced routes to BSlash and what ChanceCode still needs.",
+    "tags": ["Compilers", "BSlash"]
   }
 ]

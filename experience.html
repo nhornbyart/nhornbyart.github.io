@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Experience timeline for Nathan Hornby — IT intern, FRC programmer, and language developer.">
+  <meta name="description" content="Experience timeline for Nathan Hornby — IT intern, systems builder, and compiler developer.">
   <title>Experience · Nathan Hornby</title>
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/main.js" defer></script>
@@ -40,9 +40,9 @@
           </div>
         </div>
         <div class="timeline-item">
-          <h3>Programmer · FRC 3641 Flying Toasters</h3>
+          <h3>Robotics Software Contributor · FRC 3641</h3>
           <p class="meta">2025 — Present</p>
-          <p>Contribute to the team's Java-based robot software stack across autonomous, teleop, and scouting systems while helping run
+          <p>Contribute Java-based robot software modules across autonomous, teleop, and scouting systems while helping run
             code reviews, telemetry experiments, and testing rituals.</p>
           <div class="badges">
             <span class="badge">FRC</span>
@@ -68,8 +68,8 @@
       <h2 class="section-title">Capabilities</h2>
       <div class="cards">
         <article class="card">
-          <h3>Languages</h3>
-          <p>C, C#, Java, Python, experimental languages, shell scripting.</p>
+          <h3>Focus Areas</h3>
+          <p>Systems programming, embedded/robotics control, compiler design, custom ISA bring-up (BSlash), IT operations.</p>
         </article>
         <article class="card">
           <h3>Tooling</h3>
@@ -82,6 +82,16 @@
         </article>
       </div>
     </section>
+        <article class="card">
+          <h3>nativeaot-patcher</h3>
+          <p>Zarlo's NativeAOT patcher fork tuned for my runtime experiments and OS toolchains.</p>
+          <p class="meta"><a href="https://github.com/AzureianGH/nativeaot-patcher" target="_blank" rel="noopener">Repository</a></p>
+        </article>
+        <article class="card">
+          <h3>libquail</h3>
+          <p>Robotics helper library that delivers structured telemetry and reusable subsystems for quick bring-up.</p>
+          <p class="meta"><a href="https://github.com/AzureianGH/libquail" target="_blank" rel="noopener">Repository</a></p>
+        </article>
 
     <section class="section">
       <h2 class="section-title">Selected Projects</h2>
@@ -89,11 +99,16 @@
         <article class="card">
           <h3>CHance Toolchain</h3>
           <p>Language + IR combo (CEnhanced + ChanceCode) that can target multiple assembly backends.</p>
-          <p class="meta"><a href="https://github.com/AzureianGH/CEnhanced" target="_blank" rel="noopener">View on GitHub</a></p>
-        </article>
-      </div>
+        <li><strong>zellib · GLC · AzureLIB</strong> · shared libraries for logging, device orchestration, and OS dev convenience.</li>
+        <li><strong>RedLineOS chain</strong> · RedLineOS, AquaniteOS, HydrixOS, AzureOS bootloaders, and StarElf loader experiments.</li>
+        <li><strong>Tooling odds & ends</strong> · EarlyBirdPreprocessor, HydrixAssembler, libquail, AzuriCore, AzuriHtmlEditor, and more on <a href="https://github.com/AzureianGH?tab=repositories" target="_blank" rel="noopener">GitHub</a>.</li>
     </section>
 
+
+    <section class="section">
+      <h2 class="section-title">Architecture Playground</h2>
+      <p>Current obsession: the BSlash 32-bit CPU architecture. CEnhanced surfaces it via <code>-bslash</code>, emits <code>.bas</code> assembly, and leans on ChanceCode's backend hooks so I can iterate quickly while designing register layouts and calling conventions.</p>
+    </section>
     <section class="section">
       <h2 class="section-title">Open Source Catalog</h2>
       <ul class="list">
