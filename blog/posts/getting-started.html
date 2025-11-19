@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kickoff note about Nathan's IT internship and CHance language progress.">
+  <title>Getting the blog online · Nathan Hornby</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a class="logo" href="/">NH</a>
+      <nav>
+        <a data-nav href="/">Home</a>
+        <a data-nav href="/about.html">About</a>
+        <a data-nav href="/experience.html">Experience</a>
+        <a data-nav href="/blog/">Blog</a>
+        <a data-nav href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <article class="section post-content">
+      <p class="meta">November 18, 2025 · Ops · Compilers</p>
+      <h1>Getting the blog online</h1>
+      <p>I wanted a lightweight place to log what I'm learning in IT, robotics, and my language experiments, so this site
+        now ships with a JSON-fed blog. Adding new entries is just editing <code>blog/posts.json</code> and duplicating a
+        template.</p>
+      <h2>IT internship highlights</h2>
+      <p>Since June 2025 I've been part of the South Lyon Community Schools IT crew. Imaging season taught me to value
+        automation: I scripted a set of PowerShell helpers that prep classroom devices in batches and flag hardware that
+        needs deeper support.</p>
+      <h2>CHance + ChanceCode</h2>
+      <p>The CHance language now emits ChanceCode IR, which then targets whichever backend I need. I'm experimenting with a
+        typed macro system so the syntax stays friendly while keeping compile-time guarantees. Details live on
+        <a href="https://github.com/AzureianGH/CEnhanced" target="_blank" rel="noopener">CEnhanced</a> and
+        <a href="https://github.com/AzureianGH/ChanceCode" target="_blank" rel="noopener">ChanceCode</a>.</p>
+      <p>More soon—expect deep dives on FRC telemetry tooling and the control stack for the 2026 robot.</p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <small>© <span data-current-year></span> Nathan Hornby</small>
+  </footer>
+</body>
+
+</html>

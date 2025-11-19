@@ -1,26 +1,122 @@
 <!DOCTYPE html>
-<html>
-<head>
-<style>
-  /* Remove default browser margins and padding, and hide any overflow */
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Ensures <body> takes the full height of the viewport */
-    width: 100%;
-    overflow: hidden; /* This is the key to preventing scrolling */
-  }
+<html lang="en">
 
-  /* Ensure the image fills the entire screen using viewport units */
-  img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: fill; /* or 'cover' to maintain aspect ratio and crop if necessary */
-    display: block; /* Helps with potential spacing issues */
-  }
-</style>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Nathan Hornby — computer engineering student, FRC programmer, and creator of the CHance language.">
+	<title>Nathan Hornby · Computer Engineering Student</title>
+	<link rel="stylesheet" href="assets/styles.css">
+	<script src="assets/main.js" defer></script>
 </head>
+
 <body>
-<img src="me.jpeg" alt="My Image">
+	<header>
+		<div class="navbar">
+			<a class="logo" href="/">NH</a>
+			<nav>
+				<a data-nav href="/">Home</a>
+				<a data-nav href="/about.html">About</a>
+				<a data-nav href="/experience.html">Experience</a>
+				<a data-nav href="/blog/">Blog</a>
+				<a data-nav href="/contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="page">
+		<section class="hero">
+			<div>
+				<p class="tagline">Computer Engineering · Robotics · Programming</p>
+				<h1>I'm Nathan Hornby.</h1>
+				<p>I build high-impact robotics software, prototype new languages like <strong>CHance</strong>, and will join
+					Michigan Tech's Computer Engineering program in Fall 2026. Currently an IT Intern at South Lyon Community
+					Schools and programmer for FRC 3641 Flying Toasters.</p>
+				<div class="cta-row">
+					<a class="button primary" href="mailto:nhornbywork@gmail.com">Email Me</a>
+					<a class="button" href="https://www.linkedin.com/in/nathan-hornby-a2654a303/" target="_blank"
+						rel="noopener">LinkedIn</a>
+					<a class="button" href="/blog/">Read the blog</a>
+				</div>
+			</div>
+			<div class="profile-card">
+				<img src="NathanSelfie.jpg" alt="Nathan Hornby">
+				<div class="highlight-card" style="margin-top:1.5rem;">
+					<div class="stat">
+						<span class="label">Focus</span>
+						<span class="value">C · C# · Systems</span>
+					</div>
+					<div class="stat">
+						<span class="label">Current Roles</span>
+						<span class="value">IT Intern · FRC Programmer</span>
+					</div>
+					<div class="stat">
+						<span class="label">Next</span>
+						<span class="value">Michigan Tech '26</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Quick Snapshot</h2>
+			<div class="cards">
+				<article class="card">
+					<h3>IT Intern · South Lyon Schools</h3>
+					<p class="meta">June 2025 — Present</p>
+					<p>Keeping classrooms running by imaging devices, deploying network gear, and completing setup tasks.</p>
+				</article>
+				<article class="card">
+					<h3>FRC 3641 Flying Toasters</h3>
+					<p class="meta">Programmer</p>
+					<p>Ship robust autonomous and teleop code for competition robots with emphasis on reliability and fast iteration.</p>
+				</article>
+				<article class="card">
+					<h3>CHance Language</h3>
+					<p class="meta">Systems-side passion project</p>
+					<p>Designing a compiled language that targets ChanceCode IR for flexible backend compilation.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">What I'm Working On</h2>
+			<ul class="list">
+				<li>
+					<strong>CHance → ChanceCode toolchain</strong>
+					<p>Expanding the compiler pipeline to target multiple assembly backends. <a href="https://github.com/AzureianGH/CEnhanced" target="_blank" rel="noopener">CEnhanced</a> · <a href="https://github.com/AzureianGH/ChanceCode" target="_blank" rel="noopener">ChanceCode</a></p>
+				</li>
+				<li>
+					<strong>IT Investigation</strong>
+					<p>Analyzing and improving district IT workflows to reduce setup time and increase reliability.</p>
+				</li>
+				<li>
+					<strong>Robotics software</strong>
+					<p>Testing new methods for success for the 2025-26 competition robot with FRC 3641.</p>
+				</li>
+			</ul>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Stay in the Loop</h2>
+			<div class="grid-two">
+				<div>
+					<p>Short notes about robotics, compilers, and engineering school prep land on my blog. I keep posts practical and
+						easy to skim.</p>
+					<a class="button primary" href="/blog/">Go to Blog</a>
+				</div>
+				<div class="contact-card">
+					<div class="contact-line"><strong>Email</strong><a href="mailto:nhornbywork@gmail.com">nhornbywork@gmail.com</a></div>
+					<div class="contact-line"><strong>Phone</strong><a href="tel:+12485009926">+1 (248) 500-9926</a></div>
+					<div class="contact-line"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/nathan-hornby-a2654a303/" target="_blank" rel="noopener">/in/nathan-hornby</a></div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<small>© <span data-current-year></span> Nathan Hornby · Built with purpose in Michigan</small>
+	</footer>
 </body>
+
 </html>

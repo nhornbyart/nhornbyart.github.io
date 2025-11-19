@@ -1,2 +1,0 @@
-# nhornbyart.github.io
-nhornby

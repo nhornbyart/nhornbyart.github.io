@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Nathan Hornby — email, phone, and social links.">
+  <title>Contact · Nathan Hornby</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a class="logo" href="/">NH</a>
+      <nav>
+        <a data-nav href="/">Home</a>
+        <a data-nav href="/about.html">About</a>
+        <a data-nav href="/experience.html">Experience</a>
+        <a data-nav href="/blog/">Blog</a>
+        <a data-nav href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section">
+      <h1 class="section-title">Contact</h1>
+      <div class="grid-two">
+        <div class="contact-card">
+          <div class="contact-line">
+            <strong>Email</strong>
+            <a href="mailto:nhornbywork@gmail.com">nhornbywork@gmail.com</a>
+          </div>
+          <div class="contact-line">
+            <strong>Phone</strong>
+            <a href="tel:+12485009926">+1 (248) 500-9926</a>
+          </div>
+          <div class="contact-line">
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/in/nathan-hornby-a2654a303/" target="_blank" rel="noopener">linkedin.com/in/nathan-hornby</a>
+          </div>
+          <div class="contact-line">
+            <strong>GitHub</strong>
+            <a href="https://github.com/AzureianGH" target="_blank" rel="noopener">github.com/AzureianGH</a>
+          </div>
+          <p>Located in South Lyon, MI. Open to internship chats, robotics collabs, and compiler nerdery.</p>
+        </div>
+        <form class="contact-form" action="https://formsubmit.co/nhornbywork@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="https://nhornby.com/contact.html?sent=1">
+          <input type="hidden" name="_captcha" value="false">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send message</button>
+          <p class="meta" style="color:var(--text-muted); font-size:0.8rem;">Or email me directly at
+            nhornbywork@gmail.com</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span data-current-year></span> Nathan Hornby</small>
+  </footer>
+</body>
+
+</html>
