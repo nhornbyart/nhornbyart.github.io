@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Nathan Hornby — computer engineering student, FRC programmer, and creator of the CHance language.">
-	<title>Nathan Hornby · Computer Engineering Student</title>
+	<meta name="description" content="Nathan Hornby — computer engineering student building compilers, operating systems, and tooling across dozens of GitHub repos.">
+	<title>Nathan Hornby · Systems & Compiler Builder</title>
 	<link rel="stylesheet" href="assets/styles.css">
 	<script src="assets/main.js" defer></script>
 </head>
@@ -27,15 +27,17 @@
 	<main class="page">
 		<section class="hero">
 			<div>
-				<p class="tagline">Computer Engineering · Robotics · Programming</p>
+				<p class="tagline">Compilers · Operating Systems · Tooling</p>
 				<h1>I'm Nathan Hornby.</h1>
-				<p>I build high-impact robotics software, prototype new languages like <strong>CHance</strong>, and will join
-					Michigan Tech's Computer Engineering program in Fall 2026. Currently an IT Intern at South Lyon Community
-					Schools and programmer for FRC 3641 Flying Toasters.</p>
+				<p>I build experimental compilers, operating systems, and low-level tooling across more than sixty public GitHub
+					repos. My current focus is <strong>CHance</strong> → <strong>ChanceCode</strong>, new NativeAOT utilities, and
+					the RedLine OS chain—all while prepping for Michigan Tech Computer Engineering in Fall 2026 and keeping South
+					Lyon Community Schools' classrooms running as an IT field tech.</p>
 				<div class="cta-row">
 					<a class="button primary" href="mailto:nhornbywork@gmail.com">Email Me</a>
 					<a class="button" href="https://www.linkedin.com/in/nathan-hornby-a2654a303/" target="_blank"
 						rel="noopener">LinkedIn</a>
+					<a class="button" href="https://github.com/AzureianGH" target="_blank" rel="noopener">GitHub</a>
 					<a class="button" href="/blog/">Read the blog</a>
 				</div>
 			</div>
@@ -67,14 +69,9 @@
 					<p>Field tech + response team member handling classroom break/fix calls, reimaging devices, and keeping network gear online.</p>
 				</article>
 				<article class="card">
-					<h3>FRC 3641 Flying Toasters</h3>
-					<p class="meta">Programmer</p>
-					<p>Ship robust autonomous and teleop code for competition robots with emphasis on reliability and fast iteration.</p>
-				</article>
-				<article class="card">
 					<h3>CHance Language</h3>
-					<p class="meta">Systems-side passion project</p>
-					<p>Designing a compiled language that targets ChanceCode IR for flexible backend compilation.</p>
+					<p class="meta">Compiler + IR</p>
+					<p>Designing a compiled language that targets ChanceCode IR for flexible backend compilation and custom assembly outputs.</p>
 				</article>
 			</div>
 		</section>
@@ -87,14 +84,36 @@
 					<p>Expanding the compiler pipeline to target multiple assembly backends. <a href="https://github.com/AzureianGH/CEnhanced" target="_blank" rel="noopener">CEnhanced</a> · <a href="https://github.com/AzureianGH/ChanceCode" target="_blank" rel="noopener">ChanceCode</a></p>
 				</li>
 				<li>
-					<strong>Field response playbooks</strong>
-					<p>Developing on-call checklists and documenting fixes so our response team can close tickets faster.</p>
-				</li>
-				<li>
-					<strong>Robotics software</strong>
-					<p>Testing new methods for success for the 2025-26 competition robot with FRC 3641.</p>
+					<strong>RedLineOS + AquaniteOS</strong>
+					<p>Iterating on custom kernels, bootloaders, and supporting toolchains (EarlyBirdPreprocessor, TestCoreLib, HydrixAssembler).</p>
 				</li>
 			</ul>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Featured GitHub Projects</h2>
+			<div class="cards">
+				<article class="card">
+					<h3>CEnhanced → CHance</h3>
+					<p>Capstone-grade compiler that emits ChanceCode IR before lowering to arbitrary assembly backends.</p>
+					<p class="meta"><a href="https://github.com/AzureianGH/CEnhanced" target="_blank" rel="noopener">github.com/AzureianGH/CEnhanced</a></p>
+				</article>
+				<article class="card">
+					<h3>ChanceCode</h3>
+					<p>Intermediate representation + backend adapters that make CHance portable across architectures.</p>
+					<p class="meta"><a href="https://github.com/AzureianGH/ChanceCode" target="_blank" rel="noopener">github.com/AzureianGH/ChanceCode</a></p>
+				</article>
+				<article class="card">
+					<h3>libquail</h3>
+					<p>Lightweight robotics/controls helpers designed to slot into teams that need batteries-included utilities.</p>
+					<p class="meta"><a href="https://github.com/AzureianGH/libquail" target="_blank" rel="noopener">github.com/AzureianGH/libquail</a></p>
+				</article>
+				<article class="card">
+					<h3>NAS / NASDIS</h3>
+					<p>Assembler + disassembler pair that power other emulator efforts such as NEMU and barc-lang.</p>
+					<p class="meta"><a href="https://github.com/AzureianGH/NAS" target="_blank" rel="noopener">github.com/AzureianGH/NAS</a></p>
+				</article>
+			</div>
 		</section>
 
 		<section class="section">
@@ -108,7 +127,7 @@
 				<div class="contact-card">
 					<div class="contact-line"><strong>Email</strong><a href="mailto:nhornbywork@gmail.com">nhornbywork@gmail.com</a></div>
 					<div class="contact-line"><strong>Phone</strong><a href="tel:+12485009926">+1 (248) 500-9926</a></div>
-					<div class="contact-line"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/nathan-hornby-a2654a303/" target="_blank" rel="noopener">/in/nathan-hornby</a></div>
+					<div class="contact-line"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/nathan-hornby-a2654a303/" target="_blank" rel="noopener">in/nathan-hornby-a2654a303/</a></div>
 				</div>
 			</div>
 		</section>
