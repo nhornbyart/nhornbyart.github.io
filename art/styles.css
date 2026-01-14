@@ -112,6 +112,26 @@ main {
   margin: 0 0 1rem;
 }
 
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.profile {
+  margin: 0;
+}
+
+.profile-photo {
+  width: min(100%, 320px);
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
 footer {
   text-align: center;
   padding: 2rem 1.5rem;
