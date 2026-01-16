@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Fundamentals of Art projects">
+	<title>Art Portfolio · Fundamentals of Art</title>
+	<link rel="stylesheet" href="/art/styles.css">
+</head>
+
+<body>
+	<header>
+		<div class="navbar">
+			<a class="logo" href="/art/">NH · Art</a>
+			<nav>
+				<a href="/art/" data-nav="home">Home</a>
+				<a href="/art/class.html" data-nav="class">Classes</a>
+				<a href="/art/statement.html" data-nav="statement">Artist Statement</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="section">
+			<h1>Fundamentals of Art</h1>
+			<p>Projects are organized in chronological order, from earliest to most recent.</p>
+		</section>
+
+		<section class="section">
+			<h2>Chronological Projects</h2>
+			<div class="cards">
+				<article class="card project">
+					<h3>Personal Playing Card</h3>
+					<figure>
+						<img src="/art/artwork/personalplayingcard.jpg" alt="Personal playing card illustration with decorative line work">
+					</figure>
+					<p>My own playing card design with a Greek pillar in the center, vines wrapping around it, and eyes floating in the air. I focused on clean lines and keeping the details balanced.</p>
+				</article>
+				<article class="card project">
+					<h3>Line Landscape Drawing</h3>
+					<figure>
+						<img src="/art/artwork/linelandscape.jpg" alt="Pen line landscape drawing of a beach scene with palm trees">
+					</figure>
+					<p>A beach scene done only with lines and dots. I used thicker lines for the palm trunks and tighter line textures in the sand and water to show depth.</p>
+				</article>
+				<article class="card project">
+					<h3>Linear Sculpture</h3>
+					<figure>
+						<img src="/art/artwork/linearsculpture.jpg" alt="White linear sculpture built from connected rods">
+					</figure>
+					<p>A 3D sculpture built from pyramid shapes connected together. The angles shift as it moves across the base, and keeping it stable was the hardest part.</p>
+				</article>
+				<article class="card project">
+					<h3>Pencil / Colored Pencil Shattered Drawing</h3>
+					<figure>
+						<img src="/art/artwork/shattereddrawing.jpg" alt="Shattered geometric drawing shaded with graphite">
+					</figure>
+					<p>A shattered-style drawing of an old PC, built mostly from triangles. I blended graphite to get smooth value shifts and kept the edges sharp.</p>
+				</article>
+				<article class="card project">
+					<h3>Color Wheel</h3>
+					<figure>
+						<img src="/art/artwork/colorwheel.jpg" alt="Painted color wheel showing primary, secondary, and tertiary colors">
+					</figure>
+					<p>A hand-painted color wheel with smooth transitions between each color slice. A few brush strokes show through, so it has a slightly rough texture.</p>
+				</article>
+				<article class="card project">
+					<h3>Color Scheme Watercolor Painting</h3>
+					<figure>
+						<img src="/art/artwork/watercolorpainting.jpg" alt="Watercolor color scheme painting with geometric shapes">
+					</figure>
+					<p>A watercolor piece built around a C# logo, repeated in different color schemes. I tried to keep the washes even and the borders between shapes clean.</p>
+				</article>
+				<article class="card project">
+					<h3>Scratchboard Animal</h3>
+					<figure>
+						<img src="/art/artwork/scratchboard.jpg" alt="Scratchboard animal drawing of a cat">
+					</figure>
+					<p>A scratchboard cat with lots of short scratch marks to build fur texture. The bright highlights around the face and paws were my favorite part.</p>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<small>© <span id="year"></span> Nathan Hornby</small>
+	</footer>
+
+	<script>
+		const active = document.querySelector('[data-nav="class"]');
+		if (active) active.dataset.active = 'true';
+		const yearEl = document.getElementById('year');
+		if (yearEl) yearEl.textContent = new Date().getFullYear();
+	</script>
+</body>
+
+</html>
