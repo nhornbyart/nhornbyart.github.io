@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Psychology]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Psychology</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 15 May 2026 14:59:58 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 15 May 2026 14:59:45 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[00 Psychology MOC]]></title><description><![CDATA[
-<a data-href="01 Sensation &amp; Perception" href="01-sensation-&amp;-perception.html" class="internal-link" target="_self" rel="noopener nofollow">01 Sensation &amp; Perception</a>
-<br><a data-href="02 Sleeping &amp; Dreaming" href="02-sleeping-&amp;-dreaming.html" class="internal-link" target="_self" rel="noopener nofollow">02 Sleeping &amp; Dreaming</a>
-<br><a data-href="03 Altered States of Consciousness" href="03-altered-states-of-consciousness.html" class="internal-link" target="_self" rel="noopener nofollow">03 Altered States of Consciousness</a>
-<br><a data-href="04 Brain &amp; Nervous System" href="04-brain-&amp;-nervous-system.html" class="internal-link" target="_self" rel="noopener nofollow">04 Brain &amp; Nervous System</a>
-<br><a data-href="05 Human Development" href="05-human-development.html" class="internal-link" target="_self" rel="noopener nofollow">05 Human Development</a>
-<br><a data-href="06 Personality Theories" href="06-personality-theories.html" class="internal-link" target="_self" rel="noopener nofollow">06 Personality Theories</a>
-Key Concepts to Master:
-Sensory thresholds and adaptation
-Perception, Gestalt principles, and figure-ground perception
-Sleep stages and REM cycles
-Brain lobes and their functions
-Neurotransmitter imbalances and disorders
-Parenting styles and developmental outcomes
-Personality trait theories
-]]></description><link>00-psychology-moc.html</link><guid isPermaLink="false">00 Psychology MOC.md</guid><pubDate>Thu, 14 May 2026 17:08:48 GMT</pubDate></item><item><title><![CDATA[01 Sensation & Perception]]></title><description><![CDATA[Definition: When a stimulus activates the receptors of a sense organ; awareness of changing conditions.Something that causes a bodily response
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Psychology]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Psychology</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 15 May 2026 16:49:54 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 15 May 2026 16:49:43 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[01 Sensation & Perception]]></title><description><![CDATA[Definition: When a stimulus activates the receptors of a sense organ; awareness of changing conditions.Something that causes a bodily response
 Definition: Weakest amount of a stimulus required to produce a sensation
 Key fact: Detected 50% of the time Definition: Minimum amount of difference a person can detect between two stimuli
 Example: Optometrist testing your vision
@@ -40,8 +25,26 @@ Simplicity: The brain favors the simplest interpretation possible
 Closure: The brain fills in missing information to complete a whole
 The ability to distinguish between a figure and its background.Examples in senses other than sight:
 Walking into a bakery and smelling cinnamon while filtering out every other smell
-Eating a big meal and being able to taste the lemon inside of it
-]]></description><link>01-sensation-&amp;-perception.html</link><guid isPermaLink="false">01 Sensation &amp; Perception.md</guid><pubDate>Thu, 14 May 2026 17:08:48 GMT</pubDate></item><item><title><![CDATA[Untitled 1]]></title><description><![CDATA[Drag from below or double clickSpace + Drag to pan⌘ + Scroll to zoom]]></description><link>untitled-1.html</link><guid isPermaLink="false">Untitled 1.canvas</guid><pubDate>Thu, 14 May 2026 14:25:40 GMT</pubDate></item><item><title><![CDATA[Untitled]]></title><description><![CDATA[Drag from below or double clickSpace + Drag to pan⌘ + Scroll to zoom]]></description><link>untitled.html</link><guid isPermaLink="false">Untitled.canvas</guid><pubDate>Thu, 14 May 2026 14:25:40 GMT</pubDate></item><item><title><![CDATA[Temporal Lobe]]></title><description><![CDATA[Location: Sides of brain, near temples (left and right)
+Eating a big meal and being able to taste the lemon inside of it Retinal disparity: The difference between the images each eye receives; a binocular cue that helps the brain compute depth (greater disparity = closer object).
+Convergence: Eyes turn inward (converge) for near objects; feedback from the eye muscles provides a cue to depth and distance.
+Constancy: Perceive objects as stable and unchanging despite changes in viewing angle, distance, or lighting. Common forms include size constancy, shape constancy, and brightness (color) constancy.
+Illusions: Perceptions that incorrectly represent physical stimuli; visual illusions reveal how perceptual systems use cues and assumptions, sometimes producing systematic errors.
+Notes: The attached slide images illustrate retinal disparity (different images from each eye) and shape/size constancy examples (doors shown from different angles). These visual examples highlight how multiple cues and automatic perceptual rules interact to create our stable sense of the environment.]]></description><link>01-sensation-&amp;-perception.html</link><guid isPermaLink="false">01 Sensation &amp; Perception.md</guid><pubDate>Fri, 15 May 2026 16:45:42 GMT</pubDate></item><item><title><![CDATA[00 Psychology MOC]]></title><description><![CDATA[
+<a data-href="01 Sensation &amp; Perception" href="01-sensation-&amp;-perception.html" class="internal-link" target="_self" rel="noopener nofollow">01 Sensation &amp; Perception</a>
+<br><a data-href="02 Sleeping &amp; Dreaming" href="02-sleeping-&amp;-dreaming.html" class="internal-link" target="_self" rel="noopener nofollow">02 Sleeping &amp; Dreaming</a>
+<br><a data-href="03 Altered States of Consciousness" href="03-altered-states-of-consciousness.html" class="internal-link" target="_self" rel="noopener nofollow">03 Altered States of Consciousness</a>
+<br><a data-href="04 Brain &amp; Nervous System" href="04-brain-&amp;-nervous-system.html" class="internal-link" target="_self" rel="noopener nofollow">04 Brain &amp; Nervous System</a>
+<br><a data-href="05 Human Development" href="05-human-development.html" class="internal-link" target="_self" rel="noopener nofollow">05 Human Development</a>
+<br><a data-href="06 Personality Theories" href="06-personality-theories.html" class="internal-link" target="_self" rel="noopener nofollow">06 Personality Theories</a>
+Key Concepts to Master:
+Sensory thresholds and adaptation
+Perception, Gestalt principles, and figure-ground perception
+Sleep stages and REM cycles
+Brain lobes and their functions
+Neurotransmitter imbalances and disorders
+Parenting styles and developmental outcomes
+Personality trait theories
+]]></description><link>00-psychology-moc.html</link><guid isPermaLink="false">00 Psychology MOC.md</guid><pubDate>Thu, 14 May 2026 17:08:48 GMT</pubDate></item><item><title><![CDATA[Temporal Lobe]]></title><description><![CDATA[Location: Sides of brain, near temples (left and right)
 Location: Superior temporal lobe
 Function: Processes sound frequencies
 Processes: Pitch, volume, tone, speech sounds
