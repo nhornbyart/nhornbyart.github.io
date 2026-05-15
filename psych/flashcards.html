@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Psychology Flashcards</title>
+  <style>
+    :root{--bg:#0f1720;--card:#0b1220;--accent:#2dd4bf;--muted:#94a3b8;--text:#e6eef8;--good:#10b981;--bad:#fb7185}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    .wrap{max-width:900px;margin:36px auto;padding:0 20px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    h1{margin:0;font-size:20px}
+    .controls{display:flex;gap:12px;align-items:center}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:8px;color:var(--text)}
+
+    .modes{display:flex;gap:8px;margin:18px 0}
+    .mode{padding:8px 12px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);cursor:pointer}
+    .mode.active{background:rgba(255,255,255,0.03);color:var(--text)}
+
+    /* Card area */
+    .stage{display:flex;align-items:center;justify-content:center;min-height:64vh}
+    .card-frame{width:720px;max-width:96%;height:360px;display:flex;align-items:center;justify-content:center}
+    .flip-card{perspective:1000px;width:100%;height:100%}
+    .flip-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.9,.2,1)}
+    .flip-inner.flipped{transform:rotateY(180deg)}
+    .face{position:absolute;inset:0;border-radius:12px;background:linear-gradient(180deg,#07101a,#0b1923);box-shadow:0 8px 30px rgba(2,6,23,0.6);display:flex;align-items:center;justify-content:center;padding:28px;text-align:center;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+    .face.back{transform:rotateY(180deg);}
+    .q{font-size:22px;font-weight:700}
+    .a{font-size:16px;color:var(--muted);line-height:1.5}
+
+    .card-controls{display:flex;gap:14px;justify-content:center;margin-top:18px}
+    .ctl-btn{padding:12px 28px;border-radius:10px;border:none;font-weight:700;cursor:pointer}
+    .ctl-yes{background:var(--good);color:#042814}
+    .ctl-no{background:var(--bad);color:#3a0b0b}
+    .ctl-flip{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:10px 18px;border-radius:8px}
+
+    .progress{height:8px;background:rgba(255,255,255,0.03);border-radius:999px;overflow:hidden;margin-top:8px}
+    .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#60a5fa);width:0%;transition:width .3s ease}
+
+    /* Test mode */
+    .test-area{display:none}
+    .choices{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+    .choice{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04);padding:14px;border-radius:10px;cursor:pointer;transition:all .18s ease;color:var(--text);text-align:left}
+    .choice:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(2,6,23,0.45);border-color:rgba(255,255,255,0.08)}
+    .choice.correct{background:linear-gradient(90deg, rgba(16,185,129,0.14), rgba(16,185,129,0.06));border-color:rgba(16,185,129,0.28);box-shadow:0 6px 18px rgba(16,185,129,0.06)}
+    .choice.wrong{background:linear-gradient(90deg, rgba(251,71,133,0.06), rgba(251,71,133,0.02));border-color:rgba(251,71,133,0.18);box-shadow:0 6px 18px rgba(251,71,133,0.03)}
+    #testCard .q{font-size:20px;margin-bottom:10px}
+    .btn{border-color:rgba(255,255,255,0.08);background:linear-gradient(90deg,var(--accent),#60a5fa);color:#032;}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+    @media (max-width:600px){.card-frame{height:320px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Psychology Flashcards</h1>
+      <div class="controls">
+        <div class="stats">Correct: <span id="correctCount">0</span> · Incorrect: <span id="incorrectCount">0</span></div>
+        <a class="btn" href="index.html">Back</a>
+      </div>
+    </header>
+
+    <div class="modes">
+      <div class="mode active" id="modeStudy" onclick="switchMode('study')">Study</div>
+      <div class="mode" id="modeTest" onclick="switchMode('test')">Test</div>
+    </div>
+
+    <!-- Study Area -->
+    <div id="studyArea">
+      <div class="stage">
+        <div class="card-frame">
+          <div class="flip-card">
+            <div id="flipInner" class="flip-inner">
+              <div class="face front"><div id="frontText" class="q">Loading…</div></div>
+              <div class="face back"><div id="backText" class="a">Loading…</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cardControls" class="card-controls">
+        <button id="ctlFlip" class="ctl-flip">Flip</button>
+        <button id="ctlNo" class="ctl-btn ctl-no">✖ I didn't</button>
+        <button id="ctlYes" class="ctl-btn ctl-yes">✔ I knew</button>
+        <button id="ctlReset" class="btn" style="margin-left:8px">Reset</button>
+      </div>
+
+      <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+    </div>
+
+    <!-- Test Area -->
+    <div id="testArea" class="test-area">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <div class="small muted">Test Mode</div>
+          <div id="testTimer" style="font-weight:700;margin-top:6px">10:00</div>
+        </div>
+        <div>
+          <button class="btn" id="startTest">Start 10-minute Test</button>
+        </div>
+      </div>
+
+      <div id="testCard" style="display:none;margin-top:18px">
+        <div id="testQuestion" class="q"></div>
+        <div id="choices" class="choices"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+          <div class="small muted">Question <span id="qIndex">0</span> / <span id="qTotal">0</span></div>
+          <div>
+            <button class="btn" id="nextBtn" onclick="nextQuestion()">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="testResult" style="display:none;margin-top:18px">
+        <div id="testScore" class="q"></div>
+        <div id="testFeedback" class="small muted" style="margin-top:8px"></div>
+      </div>
+    </div>
+
+    <footer id="siteFooter">Keyboard: ←/→ navigate · Space flip · 1 = knew · 2 = didn't</footer>
+  </div>
+
+  <script>
+    // Data (same exact questions)
+    const data = [
+      {q: '1. What is psychology?', a: 'Psychology is the scientific study of behavior and mental processes — how organisms think, feel, and act.', choices: [
+        'Psychology is the scientific study of behavior and mental processes — how organisms think, feel, and act.',
+        'The study of the physical structure of the brain only.',
+        'A philosophy about morality and values.',
+        'The study of social institutions and laws.'
+      ]},
+      {q: '2. What approach to psychology is Freud associated with? Know the main difference for each of the approaches: behavioral, psychoanalytic, cognitive, humanistic, biological, and sociocultural', a: 'Freud is associated with the psychoanalytic approach, emphasizing unconscious drives and early childhood experience. Behavioral focuses on observable behavior and learning; Cognitive focuses on mental processes; Humanistic emphasizes personal growth and self-actualization; Biological emphasizes brain and physiology; Sociocultural emphasizes social and cultural influences.', choices:[
+        'Psychoanalytic — unconscious drives and childhood experiences.',
+        'Behavioral — focuses on unconscious drives and dreams.',
+        'Biological — emphasizes social and cultural influences.',
+        'Humanistic — focuses on statistical analysis of behavior.'
+      ]},
+      {q: '3. Distinguish each research method: case study, survey, naturalistic observation, experiment', a: 'Case study: in-depth study of an individual or small group; Survey: questionnaires/interviews for large samples; Naturalistic observation: observing behavior in natural settings; Experiment: manipulate variables to infer causation.', choices:[
+        'Case study: in-depth study of an individual; Survey: questionnaires; Naturalistic observation: observe; Experiment: manipulate variables to infer causation.',
+        'Case study: large sample statistical study; Survey: in-depth individual interview; Naturalistic observation: controlled lab setting; Experiment: observational only.',
+        'Case study: random assignment of participants; Survey: experiment with manipulation; Naturalistic observation: uses physiological measures; Experiment: qualitative only.',
+        'Case study: meta-analysis of studies; Survey: measuring hormones; Naturalistic observation: retrospective interviews; Experiment: correlational study.'
+      ]},
+      {q: '4. Recognize examples of the following common research problems: Hawthorne effect, self-fulfilling prophecy, statistical manipulation, and experimenter bias', a: 'Hawthorne effect: participants change behavior when observed; Self-fulfilling prophecy: expectations cause outcomes; Statistical manipulation: misleading use of statistics; Experimenter bias: researcher expectations influence results.', choices:[
+        'Hawthorne effect: changing behavior when observed; Self-fulfilling prophecy: expectations cause outcomes; Statistical manipulation: misleading stats; Experimenter bias: researcher expectations influence results.',
+        'Hawthorne effect: physiological change due to medication; Self-fulfilling prophecy: random assignment; Statistical manipulation: proper p-values; Experimenter bias: double-blind designs.',
+        'Hawthorne effect: improved reliability of measures; Self-fulfilling prophecy: experimenter error; Statistical manipulation: increased sample size; Experimenter bias: participant-driven outcomes.',
+        'Hawthorne effect: natural fluctuations; Self-fulfilling prophecy: placebo effect; Statistical manipulation: standardized reporting; Experimenter bias: automated scoring.'
+      ]},
+      {q: '5. What is personality?', a: 'Personality is an individual’s characteristic pattern of thinking, feeling, and behaving that is consistent across time and situations.', choices:[
+        'An individual’s characteristic pattern of thinking, feeling, and behaving consistent across time.',
+        'A temporary mood that changes hourly.',
+        'A single measurable trait like height.',
+        'Only the behaviors learned in childhood.'
+      ]},
+      {q: '6. What are the main characteristics of the trait theory of personality?', a: 'Trait theory sees personality as stable, measurable dispositions (traits) that influence behavior, e.g., Big Five.', choices:[
+        'Stable, measurable dispositions (traits) influencing behavior (e.g., Big Five).',
+        'Personality is solely determined by unconscious drives.',
+        'Personality is only shaped by current rewards and punishments.',
+        'Personality cannot be measured or compared between people.'
+      ]},
+      {q: '7. What is the focus of the humanistic approach to personality?', a: 'Humanistic approach emphasizes personal growth, free will, and self-actualization.', choices:[
+        'Personal growth, free will, and self-actualization.',
+        'Unconscious conflicts and childhood trauma.',
+        'Strict behavior control through reinforcement.',
+        'Only biological and genetic causes of behavior.'
+      ]},
+      {q: '8. What is a schema? Provide an example.', a: 'A schema is a mental framework for organizing knowledge and expectations; e.g., a restaurant schema includes menus, servers, and paying.', choices:[
+        'A mental framework for organizing knowledge (e.g., restaurant schema: menus, servers).',
+        'A reflex action triggered automatically by stimuli.',
+        'A type of psychological disorder.',
+        'A neurotransmitter that carries signals.'
+      ]},
+      {q: '9. Know the following defense mechanisms: repression, regression, sublimation, and rationalization', a: 'Repression: pushing distressing memories into the unconscious; Regression: reverting to earlier behaviors under stress; Sublimation: channeling impulses into acceptable activities; Rationalization: making excuses to justify behavior.', choices:[
+        'Repression: pushing memories away; Regression: reverting; Sublimation: channeling impulses; Rationalization: making excuses.',
+        'Repression: increasing anxiety intentionally; Regression: maturing behaviors; Sublimation: uncontrolled acting out; Rationalization: clinical diagnosis.',
+        'Repression: memory improvement technique; Regression: statistical method; Sublimation: physical change of state; Rationalization: logic training.',
+        'Repression: conscious recall; Regression: therapy goal; Sublimation: punishment; Rationalization: reward.'
+      ]},
+      {q: '10. What is personality disorder? Know the characteristics of the following personality disorders: narcissistic, obsessive-compulsive, paranoid, and antisocial/sociopath.', a: 'Personality disorder: enduring, inflexible patterns causing distress or impairment. Narcissistic: grandiosity and lack of empathy; Obsessive-compulsive: perfectionism and control; Paranoid: distrust and suspicion; Antisocial: disregard for others and lack of remorse.', choices:[
+        'Enduring, inflexible patterns causing distress; Narcissistic: grandiosity; OCPD: perfectionism; Paranoid: distrust; Antisocial: lack of remorse.',
+        'Temporary mood swings that resolve quickly without impairment.',
+        'A normal variation of personality with no impairment.',
+        'Only biological brain damage with clear lesion.'
+      ]},
+      {q: '11. Definition and stage (according to Piaget) in which the following occur: object permanence and conservation.', a: 'Object permanence (Sensorimotor stage, birth–2) is knowing objects exist out of sight. Conservation (Concrete Operational, ~7–11) is understanding quantity remains despite shape changes.', choices:[
+        'Object permanence: Sensorimotor (birth–2); Conservation: Concrete Operational (~7–11).',
+        'Object permanence: Formal Operational; Conservation: Sensorimotor.',
+        'Object permanence: occurs in adolescence; Conservation: occurs at birth.',
+        'Object permanence: irrelevant to development; Conservation: a personality trait.'
+      ]},
+      {q: '12. What is a critical period?', a: 'A critical period is a developmental window when certain experiences must occur for normal development (e.g., some aspects of language).', choices:[
+        'A developmental window when certain experiences must occur for normal development.',
+        'Any time when learning is impossible.',
+        'A period in adulthood only.',
+        'A statistical term for sampling windows.'
+      ]},
+      {q: '13. What development does Erik Erikson explain with his psychosocial theory?', a: 'Erikson explains social and emotional development across the lifespan through eight psychosocial stages, each with a crisis to resolve.', choices:[
+        'Social and emotional development across the lifespan through eight psychosocial stages.',
+        'Only cognitive development in childhood.',
+        'Physiological development of the brain stem.',
+        'Moral development stages identical to Kohlberg.'
+      ]},
+      {q: '14. What did Kohlberg\'s developmental stages focus on?', a: 'Kohlberg focused on moral development — how people reason about ethical dilemmas (preconventional, conventional, postconventional).', choices:[
+        'Moral development — reasoning about ethical dilemmas (preconventional, conventional, postconventional).',
+        'Social role development in infancy only.',
+        'Cognitive processing speed across lifespan.',
+        'Psychosexual stages of development.'
+      ]},
+      {q: '15. Recognize examples of each parenting style: authoritative, authoritarian, permissive, uninvolved, helicopter', a: 'Authoritative: warm with reasonable limits; Authoritarian: strict, low warmth; Permissive: warm, few rules; Uninvolved: low warmth and involvement; Helicopter: overinvolved and overprotective.', choices:[
+        'Authoritative: warm with limits; Authoritarian: strict; Permissive: few rules; Uninvolved: low involvement; Helicopter: overinvolved.',
+        'Authoritative: no rules at all; Authoritarian: permissive and warm; Permissive: highly structured; Uninvolved: hyperinvolved; Helicopter: uninvolved.',
+        'All parenting styles are identical in outcomes.',
+        'Parenting style refers only to socioeconomic status.'
+      ]},
+      {q: '16. In the angel/devil on the shoulder comparison, how are each of Freud\'s functions of the mind represented? (Id, Ego, Superego)', a: 'Id: impulsive "devil"; Superego: moralizing "angel"; Ego: realistic mediator balancing the two.', choices:[
+        'Id: impulsive devil; Superego: moral angel; Ego: realistic mediator.',
+        'Id: moral conscience; Superego: impulsive desires; Ego: dreams only.',
+        'Id: social norms; Superego: biological drives; Ego: reflex actions.',
+        'Id, Ego, Superego are three unrelated brain regions.'
+      ]},
+      {q: '17. Define "gender role" and "gender identity".', a: 'Gender role: social expectations for behavior based on gender. Gender identity: one\'s internal sense of being male, female, both, neither, or another identity.', choices:[
+        'Gender role: social expectations; Gender identity: internal sense of one\'s gender.',
+        'Gender role: biological sex at birth; Gender identity: legal documents only.',
+        'Gender role and identity are terms for IQ and personality type respectively.',
+        'Gender role: only clothing choices; Gender identity: career preference.'
+      ]},
+      {q: '18. Based on the social learning theory, how does a child learn their gender role?', a: 'By observing and imitating models (parents, peers, media) and through reinforcement and punishment.', choices:[
+        'By observing and imitating models and through reinforcement/punishment.',
+        'Only through genetic inheritance and hormones.',
+        'By formal classroom instruction exclusively.',
+        'Through random chance with no environmental influence.'
+      ]},
+      {q: '19. What are neurons?', a: 'Neurons are nerve cells that transmit information via electrical and chemical signals (dendrites receive; axon sends; synapses use neurotransmitters).', choices:[
+        'Nerve cells that transmit information via electrical and chemical signals.',
+        'Muscle cells responsible for contraction.',
+        'Hormones released into blood to signal organs.',
+        'Bone cells that support the skeleton.'
+      ]},
+      {q: '20. What is the main function of each of the lobes? (frontal, parietal, temporal, occipital)', a: 'Frontal: planning and motor control; Parietal: touch and spatial processing; Temporal: hearing, language, memory; Occipital: visual processing.', choices:[
+        'Frontal: planning/motor; Parietal: touch/spatial; Temporal: hearing/memory; Occipital: vision.',
+        'Frontal: vision; Parietal: smell; Temporal: taste; Occipital: motor planning.',
+        'All lobes perform identical functions of digestion.',
+        'Lobes are unrelated to brain function.'
+      ]},
+      {q: '21. What structure of the brain allows the two hemispheres to communicate?', a: 'The corpus callosum connects the two hemispheres and allows communication between them.', choices:[
+        'The corpus callosum connects the two hemispheres.',
+        'The hippocampus connects the hemispheres.',
+        'The spinal cord is the connection between hemispheres.',
+        'The amygdala links left and right hemispheres.'
+      ]},
+      {q: '22. What is the function of the hippocampus? Amygdala? Brainstem?', a: 'Hippocampus: forming new memories; Amygdala: processing emotions like fear; Brainstem: basic life functions (breathing, heart rate) and relaying information.', choices:[
+        'Hippocampus: memory formation; Amygdala: emotion processing; Brainstem: basic life functions.',
+        'Hippocampus: primary motor cortex; Amygdala: vision center; Brainstem: language processing.',
+        'All three structures are parts of the spinal cord.',
+        'They are each glands that secrete hormones.'
+      ]},
+      {q: '23. What is the function of the nervous system? How does information travel through this system?', a: 'The nervous system coordinates communication; information travels via sensory input to the CNS, processed and sent as motor output along neurons as electrical impulses and neurotransmitters.', choices:[
+        'Coordinates communication; information travels via neurons as electrical impulses and neurotransmitters.',
+        'Coordinates digestion only; information travels through blood exclusively.',
+        'Controls only hormonal secretions without electrical signaling.',
+        'Is primarily a structural support system with no signaling.'
+      ]},
+      {q: '24. How does hypnosis work? What are some of the therapeutic benefits of this ASC?', a: 'Hypnosis focuses attention, increases suggestibility, and reduces peripheral awareness; it can help with pain control, habit change, and anxiety in therapeutic settings.', choices:[
+        'Focuses attention and suggestibility; can help with pain control and habit change.',
+        'Works by permanently altering brain structure through surgery.',
+        'Is identical to sleep and causes memory loss in all cases.',
+        'Has no measurable effect and is purely theatrical.'
+      ]},
+      {q: '25. How does meditation work?', a: 'Meditation trains attention and awareness to promote relaxation, reduce stress, and improve emotional regulation.', choices:[
+        'Trains attention and awareness to reduce stress and improve regulation.',
+        'Is a vigorous physical exercise routine for muscle growth.',
+        'Relies on medication to produce relaxation effects.',
+        'Is only useful for improving math skills.'
+      ]},
+      {q: '26. How does biofeedback work?', a: 'Biofeedback provides real-time physiological data (e.g., heart rate) so individuals can learn to control body processes.', choices:[
+        'Provides physiological feedback so individuals can learn to control body processes.',
+        'Is a form of talk therapy without measurements.',
+        'Is surgical intervention to change organs directly.',
+        'Relies solely on genetic testing results.'
+      ]},
+      {q: '27. What are the following sleep disorders: sleep apnea and narcolepsy?', a: 'Sleep apnea: repeated breathing interruptions during sleep; Narcolepsy: excessive daytime sleepiness and sudden sleep attacks.', choices:[
+        'Sleep apnea: breathing interruptions during sleep; Narcolepsy: sudden daytime sleep attacks.',
+        'Sleep apnea: always caused by nightmares; Narcolepsy: inability to fall asleep at night.',
+        'Both are personality disorders, not sleep problems.',
+        'Sleep apnea is a digestive disorder; narcolepsy is a cardiac issue.'
+      ]},
+      {q: '28. IN GENERAL, how would you describe the sleep stages? When does dreaming occur?', a: 'Sleep alternates between NREM (light to deep) and REM stages; dreaming most commonly occurs during REM.', choices:[
+        'Sleep alternates between NREM and REM; dreaming most commonly during REM.',
+        'Sleep is a single unchanging state with no stages; dreaming occurs randomly while awake.',
+        'Dreaming occurs only during deep NREM sleep and never during REM.',
+        'REM and NREM refer to dietary stages, not sleep.'
+      ]},
+      {q: 'S1. Why do we have variations in taste? And why do we sense pain? (From Sense Stations worksheet)', a: 'Variations in taste come from genetics, receptor distribution, and experience. Pain signals tissue damage and motivates protective behavior.', choices:[
+        'Taste varies due to genetics and experience; pain signals tissue damage as protection.',
+        'Taste is identical for all humans; pain has no evolutionary purpose.',
+        'Variations in taste are only cultural with no biological basis; pain is imaginary.',
+        'Taste differences are caused solely by weather changes.'
+      ]},
+      {q: 'S2. What is the purpose of sensory adaptation?', a: 'Sensory adaptation reduces sensitivity to constant stimulation so attention focuses on changes.', choices:[
+        'To reduce sensitivity to constant stimuli so attention focuses on change.',
+        'To permanently disable a sense after brief use.',
+        'To amplify every constant stimulus equally.',
+        'To create hallucinations in normal environments.'
+      ]},
+      {q: 'S3. What is perception? And what influences it?', a: 'Perception is interpreting sensations into meaningful experiences; influenced by needs, beliefs, expectations, and past experience.', choices:[
+        'Interpreting sensations into meaning; influenced by needs, beliefs, expectations, past experience.',
+        'A purely random process unrelated to sensation or expectation.',
+        'Only determined by genetics and not influenced by experience.',
+        'A process that always yields the same interpretation for everyone.'
+      ]},
+      {q: 'S4. What is the difference between classical and operant conditioning?', a: 'Classical pairs stimuli so a neutral stimulus evokes a response; Operant uses consequences (reinforcement/punishment) to shape behavior.', choices:[
+        'Classical pairs stimuli (Pavlov); Operant uses consequences to shape behavior (Skinner).',
+        'Classical is only human learning; Operant only in animals.',
+        'Classical requires conscious thought; Operant is reflexive without learning.',
+        'Both are identical concepts describing the same process.'
+      ]},
+      {q: 'S5. Who is Ivan Pavlov?', a: 'Ivan Pavlov was a Russian physiologist who discovered classical conditioning through dog salivation experiments.', choices:[
+        'A Russian physiologist who discovered classical conditioning (dog salivation).',
+        'A 20th-century psychoanalyst who developed client-centered therapy.',
+        'An American behaviorist who invented operant chambers.',
+        'A neurologist who studied sleep stages.'
+      ]},
+      {q: 'S6. Recognize examples of operant conditioning: Positive & negative reinforcement, Positive & negative punishment', a: 'Positive reinforcement adds a pleasant stimulus (praise); Negative reinforcement removes an aversive stimulus (stop noise); Positive punishment adds aversive stimulus (scold); Negative punishment removes pleasant stimulus (take away privileges).', choices:[
+        'Positive reinforcement: add pleasant; Negative reinforcement: remove aversive; Positive punishment: add aversive; Negative punishment: remove pleasant.',
+        'Positive reinforcement: always removes something; Negative reinforcement: always adds something.',
+        'Both reinforcement and punishment are the same process.',
+        'Operant conditioning does not involve consequences.'
+      ]},
+      {q: 'S7. In conditioning, what is generalization?', a: 'Generalization is when similar stimuli elicit the conditioned response.', choices:[
+        'When similar stimuli elicit the conditioned response.',
+        'When the conditioned response is weakened by extinction only.',
+        'When a stimulus is always responded to differently even if similar.',
+        'When responses are limited to the training stimulus only.'
+      ]},
+      {q: 'S8. What are primary and secondary reinforcers?', a: 'Primary reinforcers satisfy biological needs (food); Secondary reinforcers acquire value via association (money).', choices:[
+        'Primary satisfy biological needs (food); Secondary acquire value (money).',
+        'Primary are learned rewards only; Secondary are innate reflexes.',
+        'Primary and secondary reinforcers are identical concepts.',
+        'Reinforcers are unrelated to behavior change.'
+      ]},
+      {q: 'P1. Wilhelm Wundt', a: 'Approach: Structuralism/experimental psychology. Influence: Founded the first psychology lab and emphasized scientific methods.', choices:[
+        'Structuralism/experimental psychology; founded first psychology lab.',
+        'Psychoanalytic approach; developed dream analysis.',
+        'Behaviorist who championed reinforcement schedules.',
+        'Humanistic psychologist who proposed hierarchy of needs.'
+      ]},
+      {q: 'P2. Sigmund Freud', a: 'Approach: Psychoanalytic. Influence: Theories of the unconscious, defense mechanisms, psychosexual development.', choices:[
+        'Psychoanalytic; unconscious drives and defense mechanisms.',
+        'Cognitive psychologist who studied memory stages.',
+        'Biologist who discovered neurons.',
+        'Behaviorist known for the Bobo doll study.'
+      ]},
+      {q: 'P3. Carl Jung', a: 'Approach: Analytic psychology. Influence: Collective unconscious and archetypes.', choices:[
+        'Analytic psychology; collective unconscious and archetypes.',
+        'Behaviorist focused on observable conditioning.',
+        'Neuroscientist who mapped motor cortex.',
+        'Humanistic theorist who created hierarchy of needs.'
+      ]},
+      {q: 'P4. Alfred Adler', a: 'Approach: Individual psychology. Influence: Inferiority complex and social interest.', choices:[
+        'Individual psychology; inferiority complex and social interest.',
+        'Founder of behaviorism and operant conditioning.',
+        'Pioneer of cognitive therapy techniques.',
+        'Known for research on sleep stages.'
+      ]},
+      {q: 'P5. Albert Bandura', a: 'Approach: Social-cognitive. Influence: Social learning theory and observational learning (Bobo doll).', choices:[
+        'Social-cognitive; social learning and observational learning (Bobo doll).',
+        'Psychoanalytic; developed dream symbolism concepts.',
+        'Behaviorist; invented classical conditioning.',
+        'Humanistic; proposed self-actualization hierarchy.'
+      ]},
+      {q: 'P6. Abraham Maslow', a: 'Approach: Humanistic. Influence: Hierarchy of needs and self-actualization.', choices:[
+        'Humanistic; hierarchy of needs and self-actualization.',
+        'Behaviorist; emphasis on reinforcement schedules.',
+        'Cognitive neuroscientist; memory consolidation.',
+        'Psychoanalytic theorist; infantile sexuality stages.'
+      ]},
+      {q: 'P7. Jean Piaget', a: 'Approach: Cognitive development. Influence: Stage theory of cognitive development.', choices:[
+        'Cognitive development; stage theory (sensorimotor, etc.).',
+        'Humanistic psychologist focused on hierarchy of needs.',
+        'Behaviorist who studied reinforcement.',
+        'Neuroscientist who discovered neurotransmitters.'
+      ]},
+      {q: 'P8. John Watson', a: 'Approach: Behaviorism. Influence: Emphasis on observable behavior and conditioning.', choices:[
+        'Behaviorism; emphasized observable behavior and conditioning.',
+        'Psychoanalytic theorist who wrote on dreams.',
+        'Cognitive developer of stage models of thought.',
+        'Humanistic leader of person-centered therapy.'
+      ]}
+    ];
+
+    // Study state: maintain a deck order so we can move unknowns to the end and remove knowns
+    let correct=0, incorrect=0;
+    const answered = new Array(data.length).fill(null);
+    let deck = data.map((_,i)=>i); // order of indices still to show
+    let deckPos = 0; // pointer into deck
+    let autoAdvanceTimeout = null;
+
+    const frontText = document.getElementById('frontText');
+    const backText = document.getElementById('backText');
+    const flipInner = document.getElementById('flipInner');
+    const ctlYes = document.getElementById('ctlYes');
+    const ctlNo = document.getElementById('ctlNo');
+    const ctlFlip = document.getElementById('ctlFlip');
+
+    function currentIndex(){ return deck[deckPos]; }
+
+    function render(){
+      if(deck.length === 0){ frontText.textContent = 'All done 🎉'; backText.textContent = 'You completed all cards.'; document.querySelector('.card-frame').style.outline = '6px solid var(--good)'; ctlYes.disabled = true; ctlNo.disabled = true; return; }
+      const idx = currentIndex();
+      const item = data[idx];
+      frontText.textContent = item.q;
+      backText.textContent = item.a;
+      flipInner.classList.remove('flipped');
+      // visual marker based on answered state
+      const frame = document.querySelector('.card-frame');
+      frame.style.outline = answered[idx] === null ? 'none' : (answered[idx] ? '6px solid var(--good)' : '6px solid var(--bad)');
+      // controls remain enabled so user can toggle/change; show counts
+      ctlYes.disabled = false; ctlNo.disabled = false;
+      document.getElementById('correctCount').textContent = correct;
+      document.getElementById('incorrectCount').textContent = incorrect;
+      updateProgress();
+    }
+
+    function finalizeMark(idx, isCorrect){
+      // called after a short delay to allow undo by clicking again
+      // if index no longer in deck, do nothing
+      const pos = deck.indexOf(idx);
+      if(pos === -1) return;
+      if(isCorrect){
+        // remove from deck (done)
+        deck.splice(pos,1);
+        // deckPos stays at same numeric index (now points to next item)
+        if(deckPos >= deck.length) deckPos = Math.max(0, deck.length-1);
+      } else {
+        // move to end
+        deck.splice(pos,1);
+        deck.push(idx);
+        if(deckPos > pos) deckPos--; // if we removed an earlier element, shift left
+        if(deckPos >= deck.length) deckPos = Math.max(0, deck.length-1);
+      }
+      // render next card (or finished)
+      render();
+    }
+
+    function applyAnswer(isCorrect){
+      if(deck.length === 0) return;
+      const idx = currentIndex();
+      // If same button pressed again
+      if(answered[idx] === isCorrect){
+        // Special-case: if it's incorrect and user presses incorrect again, requeue immediately and advance
+        if(isCorrect === false){
+          if(autoAdvanceTimeout){ clearTimeout(autoAdvanceTimeout); autoAdvanceTimeout = null; }
+          finalizeMark(idx,false);
+          return;
+        }
+        // Otherwise (correct already set), treat as undo
+        if(autoAdvanceTimeout){ clearTimeout(autoAdvanceTimeout); autoAdvanceTimeout = null; }
+        if(isCorrect) correct--; else incorrect--;
+        answered[idx] = null;
+        document.getElementById('correctCount').textContent = correct;
+        document.getElementById('incorrectCount').textContent = incorrect;
+        render();
+        return;
+      }
+
+      // switching or first-time marking
+      if(answered[idx] === true) correct--;
+      if(answered[idx] === false) incorrect--;
+      if(isCorrect) correct++; else incorrect++;
+      answered[idx] = isCorrect;
+      document.getElementById('correctCount').textContent = correct;
+      document.getElementById('incorrectCount').textContent = incorrect;
+
+      // schedule finalize (auto-advance) with short undo window
+      if(autoAdvanceTimeout) clearTimeout(autoAdvanceTimeout);
+      autoAdvanceTimeout = setTimeout(()=>{ finalizeMark(idx,isCorrect); autoAdvanceTimeout = null; }, 350);
+      // update immediate visuals
+      const frame = document.querySelector('.card-frame');
+      frame.style.outline = isCorrect ? '6px solid var(--good)' : '6px solid var(--bad)';
+      updateProgress();
+    }
+
+    // Reset deck to initial state
+    function resetDeck(){
+      // clear answered and restore deck order
+      for(let i=0;i<answered.length;i++) answered[i]=null;
+      deck = data.map((_,i)=>i);
+      deckPos = 0;
+      correct = 0; incorrect = 0;
+      if(autoAdvanceTimeout){ clearTimeout(autoAdvanceTimeout); autoAdvanceTimeout = null; }
+      document.getElementById('correctCount').textContent = correct;
+      document.getElementById('incorrectCount').textContent = incorrect;
+      updateProgress(); render();
+    }
+
+    // wire reset button
+    const ctlReset = document.getElementById('ctlReset');
+    ctlReset.addEventListener('click', ()=>{ if(confirm('Reset all cards and progress?')) resetDeck(); });
+
+    ctlYes.addEventListener('click', ()=> applyAnswer(true));
+    ctlNo.addEventListener('click', ()=> applyAnswer(false));
+    ctlFlip.addEventListener('click', ()=> flipInner.classList.toggle('flipped'));
+
+    function prev(){ if(deck.length===0) return; deckPos = (deckPos -1 + deck.length) % deck.length; render(); }
+    function next(){ if(deck.length===0) return; deckPos = (deckPos +1) % deck.length; render(); }
+
+    function updateProgress(){
+      const done = answered.filter(x=>x!==null).length;
+      const pct = Math.round(done / data.length * 100);
+      document.getElementById('progressBar').style.width = pct + '%';
+    }
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e)=>{
+      if(document.activeElement && (document.activeElement.tagName==='INPUT' || document.activeElement.tagName==='TEXTAREA')) return;
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'ArrowRight') next();
+      if(e.code === 'Space'){ e.preventDefault(); flipInner.classList.toggle('flipped'); }
+      if(e.key === '1') applyAnswer(true);
+      if(e.key === '2') applyAnswer(false);
+    });
+
+    // Mode switch
+    function switchMode(mode){
+      document.getElementById('modeStudy').classList.toggle('active', mode==='study');
+      document.getElementById('modeTest').classList.toggle('active', mode==='test');
+      document.getElementById('studyArea').style.display = mode==='study' ? 'block' : 'none';
+      document.getElementById('testArea').style.display = mode==='test' ? 'block' : 'none';
+      // hide footer in test mode to reduce distractions
+      const footer = document.getElementById('siteFooter');
+      if(footer) footer.style.display = mode==='test' ? 'none' : 'block';
+    }
+
+    // Test mode (basic)
+    let testQuestions=[]; let tIndex=0; let score=0; let timer=null; let timeLeft=600;
+    const startBtn = document.getElementById('startTest');
+    const testTimer = document.getElementById('testTimer');
+
+    startBtn.addEventListener('click', ()=>{
+      testQuestions = [...data].sort(()=>Math.random()-0.5);
+      tIndex = 0; score=0; timeLeft=600; document.getElementById('qTotal').textContent = testQuestions.length;
+      document.getElementById('testCard').style.display='block'; document.getElementById('testResult').style.display='none';
+      renderTest();
+      if(timer) clearInterval(timer);
+      timer = setInterval(()=>{ timeLeft--; updateTimer(); if(timeLeft<=0){ clearInterval(timer); finishTest(); } },1000);
+    });
+
+    function updateTimer(){ const m = Math.floor(timeLeft/60), s = timeLeft%60; testTimer.textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`; }
+
+    function renderTest(){
+      const card = testQuestions[tIndex]; document.getElementById('testQuestion').textContent = card.q; document.getElementById('qIndex').textContent = tIndex+1;
+      const choicesEl = document.getElementById('choices'); choicesEl.innerHTML = '';
+      // use provided choices if available, otherwise fall back to random answers
+      let opts = Array.isArray(card.choices) ? [...card.choices] : [card.a, ...data.filter(d=>d.a!==card.a).sort(()=>Math.random()-0.5).slice(0,3).map(d=>d.a)];
+      // ensure unique options
+      opts = Array.from(new Set(opts));
+      // if we have fewer than 4, fill with random other answers
+      if(opts.length < 4){
+        const extras = data.map(d=>d.a).filter(a=>!opts.includes(a)).sort(()=>Math.random()-0.5);
+        while(opts.length < 4 && extras.length) opts.push(extras.shift());
+      }
+      // shuffle
+      opts.sort(()=>Math.random()-0.5);
+      opts.forEach(opt=>{
+        const c = document.createElement('div'); c.className='choice';
+        const display = (opt.length>140)? opt.slice(0,140).trim() + '…' : opt;
+        c.textContent = display;
+        c.title = opt; // full text on hover
+        c.onclick = ()=>selectChoice(c,opt===card.a);
+        choicesEl.appendChild(c);
+      });
+    }
+
+    function selectChoice(el,good){
+      const choices = document.querySelectorAll('.choice');
+      choices.forEach(c=>c.style.pointerEvents='none');
+      if(good){ el.classList.add('correct'); score++; }
+      else{ el.classList.add('wrong'); // reveal correct by title
+        const correctEl = Array.from(choices).find(c=>c.title === testQuestions[tIndex].a);
+        if(correctEl) correctEl.classList.add('correct');
+      }
+      // advance after brief pause
+      setTimeout(()=>{ nextQuestion(); }, 700);
+    }
+
+    function nextQuestion(){
+      const choices = document.querySelectorAll('.choice');
+      if(choices.length && Array.from(choices).every(c=>c.style.pointerEvents!=='none')){
+        Array.from(choices).forEach(c=>c.style.pointerEvents='none');
+        const correctEl = Array.from(choices).find(c=>c.title === testQuestions[tIndex].a);
+        if(correctEl) correctEl.classList.add('correct');
+      }
+      tIndex++; if(tIndex>=testQuestions.length){ finishTest(); return } renderTest();
+    }
+
+    function finishTest(){ if(timer) clearInterval(timer); document.getElementById('testCard').style.display='none'; document.getElementById('testResult').style.display='block'; document.getElementById('testScore').textContent = `Score: ${score} / ${testQuestions.length}`; document.getElementById('testFeedback').textContent = `Completed in ${Math.max(0,600-timeLeft)}s.`; }
+
+    // init
+    render(); switchMode('study'); updateProgress();
+  </script>
+</body>
+</html>
