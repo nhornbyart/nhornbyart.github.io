@@ -1,1 +1,982 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Psychology]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Psychology</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 15 May 2026 14:55:41 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 15 May 2026 14:55:41 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Psychology]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>Psychology</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 15 May 2026 14:59:58 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 15 May 2026 14:59:45 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[00 Psychology MOC]]></title><description><![CDATA[
+<a data-href="01 Sensation &amp; Perception" href="01-sensation-&amp;-perception.html" class="internal-link" target="_self" rel="noopener nofollow">01 Sensation &amp; Perception</a>
+<br><a data-href="02 Sleeping &amp; Dreaming" href="02-sleeping-&amp;-dreaming.html" class="internal-link" target="_self" rel="noopener nofollow">02 Sleeping &amp; Dreaming</a>
+<br><a data-href="03 Altered States of Consciousness" href="03-altered-states-of-consciousness.html" class="internal-link" target="_self" rel="noopener nofollow">03 Altered States of Consciousness</a>
+<br><a data-href="04 Brain &amp; Nervous System" href="04-brain-&amp;-nervous-system.html" class="internal-link" target="_self" rel="noopener nofollow">04 Brain &amp; Nervous System</a>
+<br><a data-href="05 Human Development" href="05-human-development.html" class="internal-link" target="_self" rel="noopener nofollow">05 Human Development</a>
+<br><a data-href="06 Personality Theories" href="06-personality-theories.html" class="internal-link" target="_self" rel="noopener nofollow">06 Personality Theories</a>
+Key Concepts to Master:
+Sensory thresholds and adaptation
+Perception, Gestalt principles, and figure-ground perception
+Sleep stages and REM cycles
+Brain lobes and their functions
+Neurotransmitter imbalances and disorders
+Parenting styles and developmental outcomes
+Personality trait theories
+]]></description><link>00-psychology-moc.html</link><guid isPermaLink="false">00 Psychology MOC.md</guid><pubDate>Thu, 14 May 2026 17:08:48 GMT</pubDate></item><item><title><![CDATA[01 Sensation & Perception]]></title><description><![CDATA[Definition: When a stimulus activates the receptors of a sense organ; awareness of changing conditions.Something that causes a bodily response
+Definition: Weakest amount of a stimulus required to produce a sensation
+Key fact: Detected 50% of the time Definition: Minimum amount of difference a person can detect between two stimuli
+Example: Optometrist testing your vision
+The larger/stronger a stimulus, the greater the change needed to notice any difference.Definition: Get used to the level of a sensation and respond only to changes away from it
+Survival
+Prevent overstimulation
+Example: Vision adapts in darker areas
+Definition: Tendency to detect the presence of stimuli correctly due to motivation, skill, and competing stimuli
+Key argument: Argues against a single threshold Pre-attentive (automatic): Unconscious processing
+Attentive (careful attention): Conscious, deliberate focus
+Definition: The way we interpret sensations and organize them into meaningful experiences.Examples:
+Seeing a car
+Hearing a song on the radio
+Feeling a desk
+Perception is shaped by more than the raw sensory input we receive. It is influenced by:
+Needs: When we want something, we are more likely to perceive it
+Beliefs and expectations: We tend to notice things that fit what we already believe
+Previous experience: Past experience helps us interpret new sensory information
+These factors help construct the brain's perception tools, which allow us to make sense of the world quickly and efficiently.The brain automatically tries to organize separate pieces of information into wholes.Five Gestalt Principles:
+Proximity: Things that are close together are seen as belonging together
+Continuity: The brain prefers smooth, continuous patterns
+Similarity: Similar things are grouped together
+Simplicity: The brain favors the simplest interpretation possible
+Closure: The brain fills in missing information to complete a whole
+The ability to distinguish between a figure and its background.Examples in senses other than sight:
+Walking into a bakery and smelling cinnamon while filtering out every other smell
+Eating a big meal and being able to taste the lemon inside of it
+]]></description><link>01-sensation-&amp;-perception.html</link><guid isPermaLink="false">01 Sensation &amp; Perception.md</guid><pubDate>Thu, 14 May 2026 17:08:48 GMT</pubDate></item><item><title><![CDATA[Untitled 1]]></title><description><![CDATA[Drag from below or double clickSpace + Drag to pan⌘ + Scroll to zoom]]></description><link>untitled-1.html</link><guid isPermaLink="false">Untitled 1.canvas</guid><pubDate>Thu, 14 May 2026 14:25:40 GMT</pubDate></item><item><title><![CDATA[Untitled]]></title><description><![CDATA[Drag from below or double clickSpace + Drag to pan⌘ + Scroll to zoom]]></description><link>untitled.html</link><guid isPermaLink="false">Untitled.canvas</guid><pubDate>Thu, 14 May 2026 14:25:40 GMT</pubDate></item><item><title><![CDATA[Temporal Lobe]]></title><description><![CDATA[Location: Sides of brain, near temples (left and right)
+Location: Superior temporal lobe
+Function: Processes sound frequencies
+Processes: Pitch, volume, tone, speech sounds
+Location: Left temporal lobe (superior temporal gyrus)Function: Understanding spoken and written language
+Hippocampus: Long-term memory formation
+Amygdala: Emotional memory
+Stores: Autobiographical memories, facts, events Receives: Auditory input from primary auditory cortex
+Processes: Meaning of words and sentences
+Connects: To Broca's area for language production
+Connects: To hippocampus for memory Recognizes emotional meaning of words/tones
+Links sounds to emotional memories Inferior temporal regions
+Recognizes familiar faces
+Damage = prosopagnosia (can't recognize faces) Right temporal lobe for melody
+Left temporal for rhythm
+Musical memory storage Most common type of focal seizure
+May cause: Auditory hallucinations
+Déjà vu
+Emotional changes
+Memory disruption Temporal lobes (hippocampus) severely affected
+Memory loss is primary symptom
+Progressive language comprehension decline
+]]></description><link>temporal-lobe.html</link><guid isPermaLink="false">Temporal Lobe.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Big Five Personality Model]]></title><description><![CDATA[Most well-known trait theory; most empirically supportedFive central dimensions applicable to ALL peopleSpectrum: Open-minded ←→ Closed-mindedSpectrum: Responsible ←→ CarelessSpectrum: Outgoing ←→ ReservedSpectrum: Sympathetic ←→ CruelSpectrum: Moody ←→ Calm/RelaxedEveryone's Big Five score is different:Example Profile 1:O: High C: High E: Low A: High N: Low
+= Creative, organized introvert; dependable, calm
+(Good for: Research, writing, focused work)
+Example Profile 2:O: Low C: Low E: High A: High N: High
+= Spontaneous, talkative; anxious, cooperative
+(Good for: People-oriented work with support) ✓ Empirically supported: Most research of any model
+✓ Cross-cultural: Works across cultures
+✓ Stable: Traits remain relatively consistent
+✓ Comprehensive: Captures major personality variation
+✓ Practical: Used in business, clinical, research
+✓ Easy to measure: Standardized questionnaires
+✓ Predictive: Predicts important outcomes ✗ Doesn't explain why traits exist
+✗ Ignores situational influences
+✗ Self-report biases
+✗ May miss cultural-specific traits
+✗ Doesn't address values, motivations
+✗ Assumes stability (people change)
+✗ Reductionist (is personality really just these 5?) 240 items
+Most comprehensive
+Research standard 44 items
+Shorter, practical
+Widely used Various online versions
+Quick assessment
+Less precise than above Used in hiring
+Team building
+Leadership development
+Career counseling
+]]></description><link>big-five-personality-model.html</link><guid isPermaLink="false">Big Five Personality Model.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Cognitive Personality Theory]]></title><description><![CDATA[Core Principle: Ideas of oneself, others, and the world shape personalitiesDefinition: Mental representation of people, events, and concepts
+Mental templates: Internal organization of information
+Patterns: Recognizable sequences or categories
+Organization: How we structure knowledge
+Predictive: Help us anticipate what comes next
+Person has schema: "People are judgmental"
+Same situation, different schemas = different personalities
+Schemas can be accurate or distorted
+Persistent schemas shape personality consistency
+Definition: Beliefs about yourself; the most important schema
+Consistency: Act in ways that match self-image
+Selective attention: Notice information confirming self-view
+Interpretation: Interpret ambiguous events as supporting self-schema
+Memory: Remember things consistent with self-schema
+Goal selection: Choose activities matching self-concept Internal: "I failed because I'm stupid" (personality-based)
+External: "I failed because the test was hard" (situation-based)
+Determines: Self-esteem and future motivation Confirmation bias: Seek info confirming existing beliefs
+Negativity bias: Weight negative info more
+Projection: Assume others think like us Same stressor, different appraisals = different personality responses
+"Challenge" vs. "threat" appraisal changes behavior
+Personality shows through how we think about situations Identify unhelpful thoughts
+Challenge their accuracy
+Replace with more accurate thoughts
+Result: Personality changes
+Before:
+Thought: "Everyone judges me"
+Behavior: Withdrawn, anxious
+Personality: Shy, anxious
+Restructuring:
+Challenge: "Evidence they judge me?"
+New thought: "Some people are friendly"
+New behavior: Social attempts
+New personality: More outgoing ✓ Testable and researched
+✓ Explains personality change
+✓ Clear intervention path (change thoughts → change personality)
+✓ Applies to depression, anxiety, personality disorders ✗ May overestimate conscious thought influence
+✗ Doesn't account for temperament/biology
+✗ Assumes rationality (people not always rational)
+✗ Ignores emotional and behavioral factors
+]]></description><link>cognitive-personality-theory.html</link><guid isPermaLink="false">Cognitive Personality Theory.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Humanistic Personality Theory]]></title><description><![CDATA[Core Principle: People naturally strive for self-actualization (achieving their unique potential)Definition: Fulfilling one's unique potential; becoming the best version of oneselfHierarchy of NeedsPersonality Implications:
+People with unmet lower needs → anxious, focused on survival
+People with met basic needs → can pursue growth
+Self-actualization is highest human motivation
+Focus: "The Self" and client-centered therapyDefinition: Person's perception of their own nature, abilities, and worthDefinition: Evaluation of yourself based on how others respond to youDefinition: Specific conditions you must meet to feel valued by important peopleDefinition: Perception that significant others value you completely, without condition
+With unconditional regard: Authentic, confident, actualized
+With conditional regard: Self-conscious, anxious, inauthentic
+Parenting role: Provide foundation for healthy personality Realistic: See self and world accurately (not distorted)
+Accepting: Acknowledge limitations and imperfections
+Natural: Don't pretend; be authentic
+Creative: Solve problems in novel ways
+Independent: Don't need constant approval
+Purposeful: Work toward meaningful goals Empathetic listener
+Non-judgmental
+Provide unconditional positive regard
+Reflect back what they hear
+Help client find own answers ✓ Emphasizes potential for growth
+✓ Explains motivation for achievement
+✓ Supportive approach proves effective
+✓ Respects individual differences ✗ Vague concepts (hard to define, measure)
+✗ Overly optimistic about human nature
+✗ Limited empirical research
+✗ Doesn't account for mental illness biology
+✗ "Self-actualization" looks different for everyone
+✗ Assumes everyone can overcome obstacles with support
+]]></description><link>humanistic-personality-theory.html</link><guid isPermaLink="false">Humanistic Personality Theory.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Language Development]]></title><description><![CDATA[
+Baby hears words
+Attempts to repeat sounds
+Not yet understand meaning
+Random trial and error Child learns rule ("add -ed for past tense")
+Over-applies rule: "goed", "eated"
+Actually a sign of learning!
+Example: All animals are "doggy" Child learns exceptions
+Uses grammar correctly
+Flexible, creative use of language
+Can understand novel sentences
+Definition: Sensitive period early in life when language acquisition is easier
+Peak: Birth to 3-5 years
+Still possible: Beyond critical period, but harder
+Bilingual advantage: Learning multiple languages easier during critical period
+Later learning: Possible (like second language) but different process
+Evidence:
+Children with minimal language exposure struggle later
+Second language accent harder to eliminate after 7-8 years
+Early exposure helps native-like proficiency Conversation (not just TV) most effective
+Back-and-forth interaction crucial
+Emotional connection enhances learning Learning two languages simultaneously possible
+May have smaller vocabulary in each, but larger total
+Bilingual advantages: Cognitive flexibility, metalinguistic awareness
+]]></description><link>language-development.html</link><guid isPermaLink="false">Language Development.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Motor Development]]></title><description><![CDATA[Definition: Maturation — internally programmed growth of a child; plays a key role in progress of motor skillsKey Principle: Cephalocaudal (head to tail) developmentKey Principle: Proximodistal (near to far) development
+Determines readiness: Baby must be neurologically ready
+Sets sequence: Order is largely fixed
+Provides capability: Brain and muscles must be capable Accelerates slightly: Practice helps, but only after ready
+Cannot reverse order: Can't crawl before trunk control ready
+Refines skills: Once capable, practice improves ability Too early: Child not ready, cannot do skill
+Right time: Skill emerges naturally with practice
+After maturation: Still develops, but more effortful Space to move: Room to explore
+Safe environment: Freedom without danger
+Opportunities: Varied surfaces, objects to manipulate
+Encouragement: Adult support and attention Nutrition: Adequate protein and calories
+Sleep: Needed for neurological development
+Exercise: Movement strengthens muscles, builds connections Tummy time: Strengthens neck and shoulder muscles
+Play: Encourages practice of emerging skills
+Safety: Protection from obstacles while exploring
+Responsiveness: Motivation to move and explore Some babies walk at 10 months, others at 15 months
+All within normal range
+Usually not predictive of later abilities
+Genetics influence development rate Not rolling by 6 months
+Not sitting by 9 months
+Not walking by 18 months
+Significant asymmetry (one side lagging) Early intervention can help
+Brain plasticity highest in infancy
+Small delays can become larger gaps without support
+]]></description><link>motor-development.html</link><guid isPermaLink="false">Motor Development.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Myers-Briggs Type Indicator]]></title><description><![CDATA[Based on Carl Jung's personality types; popular but scientifically controversialHow you interact with the worldHow you gather informationHow you make decisionsHow you organize lifeCombination of 4 dimensions = 16 typesE/I × S/N × T/F × J/P = 2 × 2 × 2 × 2 = 16 combinations ✓ Widely used in career counseling
+✓ Fun, engaging, self-insight
+✓ Provides framework for understanding differences
+✓ Good conversation starter
+✓ Many online resources Easy to remember 4-letter type
+Validates personal differences
+Suggests career paths
+Explains relationship dynamics
+Non-judgmental framework ✗ Low test-retest reliability: Different results on repeat
+✗ Limited predictive validity: Doesn't predict outcomes well
+✗ Dichotomous thinking: Forces choices (I/E) that aren't binary
+✗ Insufficient research: Far fewer studies than Big Five
+✗ Overstated simplicity: People claim certain behaviors impossible for their type
+✗ Misuse as excuse: "I'm an INTJ so I'm blunt" (deterministic) ✓ Good for thinking about preferences
+✓ Useful in career exploration
+✓ Conversation about personality
+✓ Personal insight ✗ Not rigorously validated
+✗ Unreliable over time
+✗ Can't predict behavior well
+✗ Oversimplifies personality Widely popular in business/counseling
+Criticized by personality psychologists
+Not supported as diagnostic tool
+Used despite scientific limitations Career exploration starting point
+Team awareness building
+General self-reflection
+Ice breaker activities Clinical diagnosis
+Personnel selection (legally risky)
+Serious psychological assessment
+Major life decisions
+MBTI is entertaining and can prompt self-reflection, but it's not scientifically rigorous. For serious personality assessment, the Big Five is more reliable and researched.Think of MBTI as a fun personality framework that captures something real about how people differ, but not as psychological truth the way Big Five is.]]></description><link>myers-briggs-type-indicator.html</link><guid isPermaLink="false">Myers-Briggs Type Indicator.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Neurons & Neurotransmitters]]></title><description><![CDATA[
+Function: Stores and protects DNA
+Produces: mRNA for protein synthesis
+Makes: Proteins needed for neuron function Function: Creates energy for neuron
+Contains: Mitochondria (powerhouses)
+Integrates: Signals from dendrites Structure: Fatty insulation around axon
+Function: Speeds up electrical impulses
+Protection: Protects axon from damage
+Benefit: Makes neural transmission 10-100x faster Location: End of axon
+Function: Release neurotransmitters
+Structure: Vesicles containing neurotransmitters
+Definition: Chemical messengers produced in neurons that transmit information between brain cells
+Too much or too little linked to disorders
+Medications often target neurotransmitter levels
+Lifestyle affects neurotransmitter production Excess linked to: Alzheimer's disease
+Normal role: Learning, memory, movement
+Problem: Buildup disrupts neural function Excess linked to: Schizophrenia
+Normal role: Motivation, reward, movement
+Problem: Excessive dopamine = hallucinations, delusions Deficiency linked to: Parkinson's disease
+Normal role: Motivation, movement control
+Problem: Loss of motor control, reduced motivation Deficiency linked to: Depression
+Normal role: Mood regulation, sleep, appetite
+Problem: Low mood, sleep disruption, anxiety Excitatory signals encourage neuron firing
+Inhibitory signals prevent neuron firing
+Both types necessary for proper function
+Too much excitation = seizures
+Too much inhibition = paralysis/coma
+]]></description><link>neurons-&amp;-neurotransmitters.html</link><guid isPermaLink="false">Neurons &amp; Neurotransmitters.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Occipital Lobe]]></title><description><![CDATA[Location: Very back of brain (posterior/occipital pole)Location: First visual processing area (back of occipital lobe)Function: Analyzes basic visual featuresPrinciple: Visual field maps directly onto visual cortexResult: Cortex contains distorted "map" of visual world
+Route: Occipital → Temporal lobe
+Function: Object identification
+Question: "What am I looking at?"
+Example: Recognizing a face as your friend Route: Occipital → Parietal lobe
+Function: Spatial location and movement
+Question: "Where is it / where is it going?"
+Example: Tracking a moving car Scotoma: Blind spot in visual field (often triangular)
+Loss is retinotopic: Corresponds to location of damage
+Rest of vision: Usually preserved Can see all basic features
+Cannot recognize what they're looking at
+"Visual object agnosia" = see but don't recognize
+Damage not to V1 but to connections to temporal lobe Massive bilateral occipital damage
+Can lead to complete blindness
+Some patients have "blindsight" (detect movement without awareness) Specific regions respond to specific colors
+V4 area specialized for color
+Color perception involves occipital + temporal processing Usually retinal (cone cells lack pigment)
+Rarely due to cortical damage alone Middle temporal area (MT/V5) processes motion
+Detects direction and speed
+Essential for tracking moving objects Akinetopsia: Motion blindness
+Can't see movement (see "snapshots")
+Extremely rare with cortical damage
+Dangerous (can't judge approaching cars) Occipital lobe hyperactivity
+Visual disturbances (zigzag lines, blind spots)
+Followed by headache Visual hallucinations
+Flashing lights, geometric patterns
+Often start in back of visual field
+]]></description><link>occipital-lobe.html</link><guid isPermaLink="false">Occipital Lobe.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Parenting Styles]]></title><description><![CDATA[Definition: Characteristic patterns of parental attitudes and behaviors that create an emotional climate for parent-child interactionApproach: "My way or the highway"
+High demands
+Low responsiveness
+Little discussion
+Strict rules
+Punishment-oriented ✗ Obedient but not independent
+✗ Lower self-esteem
+✗ May rebel or become anxious
+✗ Difficulty making decisions
+✗ Limited creativity
+Approach: "Do whatever you want"
+Low demands
+High responsiveness
+Few boundaries
+Few rules/limits
+Child-centered decisions ✗ Difficulty with self-control
+✗ Struggle with authority later
+✗ Higher anxiety (lack structure)
+✗ May be self-centered
+✗ Impulsivity issues
+Approach: "I don't really care"
+Low demands
+Low responsiveness
+Neglectful
+Parent's needs prioritized
+Minimal involvement ✗ Insecure attachment
+✗ Behavioral problems
+✗ Low self-esteem
+✗ Social difficulties
+✗ Academic struggles
+✗ Emotional regulation problems
+Approach: "I'm involved in everything"
+✗ Difficulty with independence
+✗ Higher anxiety
+✗ Reduced resilience
+✗ Poor problem-solving
+✗ May appear overly perfect
+Approach: "I'm here to guide you"
+High demands AND high responsiveness
+Clear rules with explanation
+Democratic discussion
+Firm but warm
+Consistent consequences ✓ Responsibility and self-reliance
+✓ High self-esteem
+✓ Good social skills
+✓ Academic achievement
+✓ Secure attachment
+✓ Healthy independence Establishment of Limits Provides security and structure
+Clear expectations reduce anxiety
+Safety boundaries Warmth of Support Unconditional love and acceptance
+Emotional safety
+Encouragement Neither too strict (authoritarian) nor too permissive
+Demands matched with support
+Structure with flexibility
+Control with understanding Explain reasons for rules
+Listen to child's perspective
+Allow input on decisions
+Follow through consistently
+Show affection regularly
+Provide feedback (praise and correction)
+Note: Research primarily Western-focused
+Different cultures may have different effective styles
+Values vary (individualism vs. collectivism)
+But authoritative features generally associated with positive outcomes across cultures
+]]></description><link>parenting-styles.html</link><guid isPermaLink="false">Parenting Styles.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Perceptual Development]]></title><description><![CDATA[Research Question: When do babies understand depth perception?
+Mother sits on far side of "cliff"
+Baby placed on near side
+Observer watches baby's response
+Does baby crawl across apparent cliff? Around 6 months: Baby develops depth perception
+~8 months: Mobile enough to notice/fear
+First crawlers: More likely to show fear (understand danger)
+Non-crawlers: May not show fear yet (can't move) 0-3 months: Responds to loud sounds
+3-6 months: Turns to familiar voices
+6-12 months: Recognizes own name
+12+ months: Understands simple words 0-3 months: Responds to touch, temperature
+3-6 months: Explores with mouth, hands
+6-12 months: Discriminates textures (soft, rough) Cognitive development: Understand danger
+Motor development: Can move toward danger
+Memory development: Remember bad experiences
+Pattern recognition: Recognize threatening stimuli Provide safe exploration: Let baby explore safely
+Gradual challenges: Introduce novel stimuli gradually
+Reassurance: Be present during new experiences
+Don't force: Respect baby's developmental readiness Babies around 6-8 months develop fear of heights
+Earlier: extra dangerous (no fear restraint)
+Later: natural caution helps safety
+Still need supervision (fear not foolproof)
+]]></description><link>perceptual-development.html</link><guid isPermaLink="false">Perceptual Development.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Personality Assessment Methods]]></title><description><![CDATA[Definition: Tests where individuals interpret ambiguous stimuli, with responses revealing their unconscious personality, conflicts, and thought processes
+What we project reveals our mind
+Unconscious shows through interpretation
+No "right" answer = genuine response
+Unique interpretations reveal personality
+Stimuli: 10 symmetrical inkblots
+Show ambiguous inkblot
+Ask: "What might this be?"
+Note: What they see, where they see it, what details they use
+Repeat with 10 inkblots
+Analyze responses Seeing "normal" things = good reality contact
+Seeing movement = imagination, creativity
+Excessive detail = obsessive thinking
+Ignoring color = emotional withdrawal Supporters: Reveals unconscious processes
+Critics: Low reliability, subjective scoring, limited predictive validity
+Research: Mixed results; not widely validated
+Stimuli: 30 ambiguous pictures (usually showing 1-3 people in unclear situation)
+Show ambiguous picture
+Ask: "Tell a story about this picture"
+Prompt for: What's happening? What led to it? What will happen?
+Record full story
+Analyze themes across stories Themes of failure in stories = achievement anxiety
+Lonely characters = isolation concerns
+Aggressive scenarios = anger issues Better researched than Rorschach
+More interpretable stories (clear content)
+Still subjective in scoring
+Used clinically but not always validated ✓ Open-ended (can't fake easily)
+✓ Reveals unconscious material
+✓ Rich qualitative data
+✓ Good clinical interview starters ✗ Low test-retest reliability
+✗ High scorer subjectivity
+✗ Difficult to quantify
+✗ Limited predictive validity
+✗ No strong empirical support for interpretations Still used clinically
+Often combined with other assessments
+Better as exploratory than diagnostic tool
+More common in therapeutic settings than research
+]]></description><link>personality-assessment-methods.html</link><guid isPermaLink="false">Personality Assessment Methods.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Psychoanalytic Personality Theory]]></title><description><![CDATA[Founder: Sigmund Freud and Carl JungDefinition: Inherited ideas based on ancestors' experiences that shape one's perception
+Inherited patterns: Biological, pre-existing
+Activate unconsciously: Without awareness
+Guide perception: What we notice, how we interpret
+Influence behavior: Automatic responses
+Show in dreams: Symbolic representations
+Appear in myths: Universal story patterns Integrating different archetypes
+Balancing light and shadow
+Achieving wholeness (individuation)
+Becoming authentic self
+Research Question: Can aggression be learned through observation?
+Participants: Young children
+Condition 1: Watch adult behave aggressively toward doll
+Condition 2: Watch adult behave calmly
+Control: No observation Adult either punches, kicks, or sits quietly with doll
+Child watches (or doesn't)
+Child later placed in room with similar doll Observed aggression: Children were MORE aggressive
+Specific actions: Imitated exact aggressive behaviors
+No aggression condition: Children were calm Observation: Watch behavior
+Encoding: Remember it
+Reproduction: Try the behavior
+Motivation: If rewarded/reinforced, repeat Personality shapes how we see environment
+Environment provides models and reinforcement
+Behavior reflects personality and changes environment
+All three constantly influencing each other ✓ Acknowledges unconscious processes
+✓ Emphasizes early experience importance
+✓ Considers defense mechanisms
+✓ Widely influenced psychology ✗ Difficult to test empirically
+✗ Based on clinical cases (biased sample)
+✗ Overemphasizes childhood
+✗ Limited scientific support
+✗ Some concepts outdated Psychoanalytic ideas influential but not dominant
+Some concepts validated; others discarded
+Defense mechanisms still studied
+Unconscious processes confirmed by neuroscience
+More emphasis on biology than Freud proposed
+]]></description><link>psychoanalytic-personality-theory.html</link><guid isPermaLink="false">Psychoanalytic Personality Theory.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Trait Theory]]></title><description><![CDATA[Core Principle: Personality is best understood as a set of measurable traits; everyone possesses all traits to varying degreesEveryone has:
+Some level of extraversion (more or less outgoing)
+Some level of conscientiousness (more or less organized)
+Some level of agreeableness (more or less sympathetic)
+Your unique combination creates your personalityAllport identified over 4,000 trait-related words in English!
+Definition: Trait so strong, person is identified with it
+Rarity: Very rare
+Example: "Machiavellian" (though not from Machiavelli himself)
+Effect: Dominates personality entirely Definition: Traits that best describe a person
+Number: Usually 5-10 main traits
+Example: Honest, responsible, cheerful
+Effect: Core to personality Definition: Traits less consistent; show situationally
+Context-dependent: Only appear in specific situations
+Example: Shy at parties but talkative with close friends
+Effect: Less central to personality
+"Rate yourself 1-7 on each trait"
+Person rates themselves
+Scored objectively
+Produces numerical scores
+Reliable and consistent Others rate the person
+Can compare to self-report
+Reveals blind spots
+More objective perspective ✓ Objective measurement
+✓ Scientific approach
+✓ Predictive validity
+✓ Cross-cultural research
+✓ Applied uses (job selection, compatibility) ✗ Oversimplifies personality
+✗ Ignores situational factors
+✗ Doesn't explain why traits exist
+✗ Assumes stability (people change)
+✗ Self-report bias (people not always accurate)
+✗ Doesn't address motivation, values
+✗ Cultural differences in trait expression
+Idea: Most important traits are encoded in languageProcess:
+Find all personality-describing words in dictionary
+Reduce to single traits (synonyms combined)
+Ask people to rate themselves
+Use statistics to find patterns
+Result: Core personality dimensions
+Finding: Different researchers found different numbers of core traits
+Two factors: Introversion-Extraversion
+Five factors: "Big Five" (most popular)
+Sixteen factors: Myers-Briggs
+Others: 3, 6, 7, 10 factors Match personality traits to job requirements
+"This job needs high conscientiousness" Compare couple's traits
+Identify potential conflicts Trait extremes suggest personality disorders
+High neuroticism → anxiety, depression
+Low agreeableness → antagonistic behavior Team composition
+Leadership potential
+Employee selection
+]]></description><link>trait-theory.html</link><guid isPermaLink="false">Trait Theory.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Biofeedback]]></title><description><![CDATA[Definition: Process of learning to control bodily states using specialized machines that provide real-time information about physiological changesStudy: Teaching muscle relaxation through biofeedback
+Patients had tension headaches
+Measured forehead muscle tension (EMG)
+Provided visual feedback
+Taught to relax these muscles Success: Significantly reduced tension headaches
+Patients learned to control muscle tension
+Effects lasted after treatment ended See forehead tension rising → stress response
+Try relaxation techniques
+See tension drop on display → positive reinforcement
+Learn mind-body connection
+Apply skill in daily life Awareness: Real-time feedback shows the connection
+Control: Discover you can influence physiology
+Reinforcement: Success with techniques builds confidence
+Generalization: Learned control applies outside lab
+Possible Arguments:For:
+State of focused, narrowed attention
+Different brain wave patterns
+Relaxation response distinct from normal waking
+Against:
+Person remains fully conscious
+More like skill-learning than consciousness alteration
+Not quite the same as meditation or hypnosis
+Conclusion: Arguably yes—it produces sustained physiological changes distinct from normal waking consciousness]]></description><link>biofeedback.html</link><guid isPermaLink="false">Biofeedback.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Cerebral Cortex Overview]]></title><description><![CDATA[Definition: The outer layer of the brain made of grey matter; divided into four lobes FRONTAL LOBE (Planning) | PARIETAL LOBE (Sensation) | | TEMPORAL - OCCIPITAL (Hearing) (Vision)
+Key Principle: Different functions are located in different parts of the brainPhineas Gage (1848): First case demonstrating localization of function
+Metal tamping iron pierced through frontal lobe
+Survived but personality changed dramatically
+Showed frontal lobe involved in personality/behavior Left hemisphere controls right side of body
+Right hemisphere controls left side of body
+Crossed neural pathways from brain stem Complex functions involve multiple lobes
+Example: Reading requires visual (occipital), language (temporal), motor (frontal) Brain can reorganize after damage
+Other areas can compensate for injuries
+More plasticity in younger brains
+]]></description><link>cerebral-cortex-overview.html</link><guid isPermaLink="false">Cerebral Cortex Overview.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Dreams & Dreaming]]></title><description><![CDATA[
+Only dream about what we know
+Based on what we've seen/experienced before
+Can't imagine entirely novel colors or sensations
+Dreams remix existing memories and experiences Brain chemistry: Low norepinephrine during REM (memory hormone)
+Rapid fading: Dreams fade quickly upon waking
+No effort to encode: Dreams aren't consciously reinforced
+Abrupt transitions: Waking jars us from narrative
+Definition: Dreaming while knowing/being aware that you are dreaming
+Bring conscious awareness into the dream
+"Wake up" within the dream without waking up physically
+Retain some executive control Beginning to notice dream details → higher level of awareness in waking state as well
+Enhanced metacognition (thinking about thinking)
+Better recognition of patterns and inconsistencies
+Study: 45 undergraduates tested for creativity
+Boring task group: 41% more creative uses
+Why? Allowed mind to "incubate" the problem
+Moderate cognitive load (not engaging, but not idle) optimal for creativity Too much focus: Stuck in conscious constraints
+Too little focus: Random thought, no progress
+Just right: Daydreaming allows productive incubation
+]]></description><link>dreams-&amp;-dreaming.html</link><guid isPermaLink="false">Dreams &amp; Dreaming.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Frontal Lobe]]></title><description><![CDATA[Location: Front of brain (largest lobe, about 1/3 of cerebral cortex)Location: Precentral gyrus (strip running vertically near front)Function: Initiates and controls voluntary movementsLocation: Left frontal lobe (inferior frontal gyrus)Function: Speech production and language expressionNormal speech: "I went to the store and bought milk"
+Broca's: "I... store... buy... milk"
+(Function words like "to", "and", "the" are missing) Sense of self
+Social behavior
+Emotional regulation
+Motivation
+Risk assessment
+1848 Railroad Accident:
+Metal tamping iron pierced through left frontal lobe
+Survived with minimal immediate neurological damage
+Dramatic personality changes: Responsible → irresponsible
+Polite → crude/profane
+Good-natured → irritable
+Cautious → reckless Significance: First clear evidence that damage to specific brain region causes specific behavioral changes
+Capacity: Hold 4-7 items temporarily
+Duration: 15-30 seconds without rehearsal
+Function: Essential for reasoning, problem-solving, reading comprehension
+Damage effect: Difficulty with complex tasks Frontal lobe has good recovery potential
+Other regions may compensate for motor loss
+Language recovery possible (especially in young people)
+Rehabilitation can rebuild connections
+]]></description><link>frontal-lobe.html</link><guid isPermaLink="false">Frontal Lobe.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Hypnosis]]></title><description><![CDATA[Definition: Narrowed focus of attention in which people become highly suggestible to changes in behavior and thought
+Induction: Guide into hypnotic state
+Deepening: Increase depth of trance
+Therapeutic: Deliver suggestions
+Emergence: Gradually return to normal awareness
+Definition: Suggestion made during hypnosis that influences behavior after the session ends
+Suggestion planted in hypnotic state
+Person wakes from hypnosis
+Behavior/memory affected later without realizing why Controversial: Recovered memories may be false
+Therapist responsibility: Ethical guidelines required
+Not mind control: Can't make someone do something against values
+Definition: Reduction of pain through hypnosis
+Chronic pain management
+Surgical procedures (in some settings)
+Dental procedures
+Burn treatment
+Cancer pain (palliative care) Relaxation reduces muscle tension
+Anxiety reduction = less pain amplification
+Altered attention to pain signals
+Psychological framing changes pain interpretation Works better for some people than others
+Doesn't eliminate pain completely
+Shouldn't replace medical treatment
+Effect varies with susceptibility and condition
+]]></description><link>hypnosis.html</link><guid isPermaLink="false">Hypnosis.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Meditation]]></title><description><![CDATA[Definition: Focusing of attention to clear one's mind and produce relaxationApproach: Mental repetition of mantra
+Sit with eyes closed
+Mentally repeat a mantra (e.g., "Om")
+Continue for 15-20 minutes
+Practice 2× per day Mantra absorbs attention
+Reduces random thought patterns
+Induces deep relaxation response
+Regular practice builds neurological changes Deep relaxation
+Reduced anxiety
+Improved focus
+Sense of inner peace
+Approach: Focus on present moment awareness
+Observe body sensations (tension, comfort)
+Focus on breath (natural rhythm)
+Notice thoughts without judgment
+Return attention when mind wanders Non-judgmental observation
+Accept what arises without trying to change it
+Develop awareness of mental patterns Enhanced present-moment awareness
+Reduced rumination
+Better emotional regulation
+Decreased anxiety
+Approach: Concentrate on breathing process
+Focus exclusively on breath
+Notice inhale and exhale
+Count breaths or use simple pattern (4-7-8)
+Use breath as anchor for attention Immediate calming effect
+Portable (can do anywhere)
+Provides focus point
+Develops concentration
+Activates parasympathetic nervous system Brain waves: Shift toward alpha/theta rhythms
+Heart rate: Decreases
+Blood pressure: Lowers
+Cortisol: Reduced (stress hormone)
+Parasympathetic activation: Increased
+Brain plasticity: Long-term meditators show structural changes
+]]></description><link>meditation.html</link><guid isPermaLink="false">Meditation.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Newborn Capabilities]]></title><description><![CDATA[Key Point: Newborns have innate sensory filtering mechanisms to prevent overwhelm
+Trigger: Light touch on cheek
+Response: Head turns toward touch, mouth opens
+Purpose: Helps baby find breast/bottle
+Duration: Present at birth, fades around 3-4 months Trigger: Something placed in palm
+Response: Baby grips tightly
+Strength: Surprisingly strong for newborn
+Duration: Present at birth, fades around 5-6 months Trigger: Anything touches roof of mouth
+Response: Automatic sucking motion
+Purpose: Feeding
+Duration: Present at birth, becomes voluntary around 2-3 months Trigger: Sudden movement or loud noise
+Response: Arms fling out, then curl back in
+Purpose: Possible evolutionary protection
+Duration: Present at birth, fades by 5-6 months At birth: Sees light and dark, blurry
+Color: Can distinguish some colors
+Focus: Best at 8-12 inches
+Preference: Faces and high contrast In womb: Can hear sounds from 6-7 months gestation
+At birth: Responds to loud sounds
+Preference: Higher pitched sounds (voices)
+Startle: Sudden loud noises trigger Moro reflex Taste: Prefer sweet (breast milk is sweet)
+Smell: Recognize mother's scent
+Response: Turn toward familiar smells Sensitivity: More sensitive than adults to pain
+Temperature: Can sense temperature changes
+Texture: Respond to soft vs. rough surfaces Need caregiver contact and responsiveness
+Physical touch essential for development
+Emotional connection supports growth Hold close to provide security
+Responsive caregiving reduces stress
+Physical contact regulates temperature and heart rate
+]]></description><link>newborn-capabilities.html</link><guid isPermaLink="false">Newborn Capabilities.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Parietal Lobe]]></title><description><![CDATA[Location: Top and back of brain (behind frontal, above temporal)Definition: The region of parietal lobe that receives and processes touch sensations
+Spatial awareness: Knowing where you are
+Navigation: Moving through space
+Object location: Judging distances
+Depth perception: 3D awareness Mental representation of body position
+Where limbs are in space
+Continuously updated from proprioceptors Spatial neglect: Ignoring one side of space
+Ataxia: Loss of coordination
+Constructional apraxia: Can't build/draw
+The parietal lobe is a sensory and spatial integration center:
+Receives sensory input from thalamus
+Processes multiple sensory types simultaneously
+Integrates with visual information
+Coordinates with motor areas for movement Touch sensations from hand (parietal)
+Proprioceptive feedback (parietal)
+Spatial location of nose (parietal)
+Motor command to move hand (frontal)
+Result: Successful coordination
+]]></description><link>parietal-lobe.html</link><guid isPermaLink="false">Parietal Lobe.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[The Nervous System]]></title><description><![CDATA[Function: Controls and coordinates all bodily functionsComponents:
+Brain: Control center for all functions
+Spinal Cord: Connects brain to PNS; handles reflex actions
+Function: Connects CNS to rest of body via branches of nerves
+Controls voluntary movements
+Transmits sensory info from skin, muscles, joints Controls involuntary functions
+Heart rate, digestion, hormones Activation: Threat or stress
+Response: Fight-or-flight
+Increases: Heart rate, breathing, blood pressure
+Decreases: Digestion, immune response Activation: Safety and calm
+Response: Rest-and-digest
+Decreases: Heart rate, breathing
+Increases: Digestion, immune response Action potentials travel along axon
+Very fast transmission
+All-or-nothing signal Neurotransmitters cross synaptic gap
+Slower than electrical
+Can be modulated (amplified or inhibited) Fast, automatic response
+Protects from immediate harm
+Brain learns after action taken Signal reaches brain
+Processing occurs
+Voluntary decision made
+Action taken
+Slower but more flexible
+]]></description><link>the-nervous-system.html</link><guid isPermaLink="false">The Nervous System.md</guid><pubDate>Wed, 13 May 2026 19:03:07 GMT</pubDate></item><item><title><![CDATA[Sleep Disorders]]></title><description><![CDATA[Definition: One or more pauses in breathing or shallow breaths while sleeping
+Person stops breathing repeatedly during sleep
+Breathing resumes (usually with a gasp or snort)
+May wake up partially without realizing Poor sleep quality
+Daytime fatigue
+Increased risk of heart problems
+Can lead to sudden death if untreated Obstructive: Airways collapse during sleep
+Central: Brain fails to signal breathing muscles
+Complex: Combination of both
+Definition: Persistent problems falling asleep and/or staying asleep
+Stress and anxiety
+Poor sleep habits
+Medications
+Sleep environment (noise, light, temperature)
+Mental health conditions (depression, PTSD)
+Caffeine, alcohol, nicotine Daytime fatigue and irritability
+Difficulty concentrating
+Weakened immune system
+Increased accident risk
+Long-term health problems
+Definition: Chronic, overwhelming daytime drowsiness caused by brain's inability to regulate sleep-wake cycles normally
+Uncontrollable sleep attacks during day
+Person may fall asleep during normal activities
+Not simply tired — overwhelming need to sleep
+REM sleep enters earlier than normal
+May experience cataplexy (sudden loss of muscle tone triggered by emotion) Brain lacks adequate hypocretin/orexin (neurotransmitter regulating wakefulness)
+Often caused by autoimmune condition destroying hypocretin neurons
+Genetic component also involved Stimulant medications (modafinil, amphetamines)
+Scheduled naps
+Lifestyle modifications
+Sodium oxybate (for cataplexy)
+]]></description><link>sleep-disorders.html</link><guid isPermaLink="false">Sleep Disorders.md</guid><pubDate>Wed, 13 May 2026 17:09:31 GMT</pubDate></item><item><title><![CDATA[Sleep Stages]]></title><description><![CDATA[Biological clock that regulates sleep-wake cycles over approximately 24 hours
+Full cycle: ~90 minutes
+Nightly cycles: 4-5 complete cycles
+First REM: Short (5-10 min)
+Last REM: Long (30-60 min)
+Stage IV: Gets progressively shorter throughout night
+Experience hypnagogic hallucinations (hallucinations between waking and sleep)
+Feeling of falling
+Hearing your name called
+Sleep starts/jerks
+Duration: 5-10 minutes
+Bridge between wakefulness and sleep
+Light sleep
+Still easily awakened
+Some muscle twitches
+Duration: 20 minutes per cycle
+Sleep spindles: Brief bursts of rhythmic brain activity
+Lowered body temperature
+Heart rate slows
+Still responsive to sounds
+Duration: Variable
+Bridge between light and deep sleep
+Starting to enter deep sleep
+Harder to wake
+Duration: 30 minutes
+Deepest sleep stage
+Hardest to wake from
+Parasomnia occur here: Sleepwalking
+Sleep talking
+Night terrors
+Bedwetting Duration: 15-45 minutes per cycle (gets longer as night progresses)
+Vivid dreams and nightmares
+Sleep paralysis: Can't move (protective mechanism)
+Heart rate and breathing increase
+Brain wave activity resembles wakefulness
+Body temperature regulation fails (feel hot or cold) Enters first REM approximately 90 minutes into sleep
+Returns to Stage II after REM
+REM periods become progressively longer
+Most vivid, longest dreams in final REM cycles
+]]></description><link>sleep-stages.html</link><guid isPermaLink="false">Sleep Stages.md</guid><pubDate>Wed, 13 May 2026 17:09:21 GMT</pubDate></item><item><title><![CDATA[INDEX]]></title><description><![CDATA[
+<a data-href="Sensation Basics" href="sensation-basics.html" class="internal-link" target="_self" rel="noopener nofollow">Sensation Basics</a>
+<br><a data-href="Sensory Thresholds" href="sensory-thresholds.html" class="internal-link" target="_self" rel="noopener nofollow">Sensory Thresholds</a>
+<br><a data-href="Sensory Adaptation &amp; Signal Detection" href="sensory-adaptation-&amp;-signal-detection.html" class="internal-link" target="_self" rel="noopener nofollow">Sensory Adaptation &amp; Signal Detection</a> <br><a data-href="Sleep Stages" href="sleep-stages.html" class="internal-link" target="_self" rel="noopener nofollow">Sleep Stages</a>
+<br><a data-href="Dreams &amp; Dreaming" href="dreams-&amp;-dreaming.html" class="internal-link" target="_self" rel="noopener nofollow">Dreams &amp; Dreaming</a>
+<br><a data-href="Sleep Disorders" href="sleep-disorders.html" class="internal-link" target="_self" rel="noopener nofollow">Sleep Disorders</a>
+<br><a data-href="Meditation" href="meditation.html" class="internal-link" target="_self" rel="noopener nofollow">Meditation</a>
+<br><a data-href="Hypnosis" href="hypnosis.html" class="internal-link" target="_self" rel="noopener nofollow">Hypnosis</a>
+<br><a data-href="Biofeedback" href="biofeedback.html" class="internal-link" target="_self" rel="noopener nofollow">Biofeedback</a> <br><a data-href="The Nervous System" href="the-nervous-system.html" class="internal-link" target="_self" rel="noopener nofollow">The Nervous System</a>
+<br><a data-href="Neurons &amp; Neurotransmitters" href="neurons-&amp;-neurotransmitters.html" class="internal-link" target="_self" rel="noopener nofollow">Neurons &amp; Neurotransmitters</a>
+<br><a data-href="Cerebral Cortex Overview" href="cerebral-cortex-overview.html" class="internal-link" target="_self" rel="noopener nofollow">Cerebral Cortex Overview</a>
+<br><a data-href="Temporal Lobe" href="temporal-lobe.html" class="internal-link" target="_self" rel="noopener nofollow">Temporal Lobe</a>
+<br><a data-href="Parietal Lobe" href="parietal-lobe.html" class="internal-link" target="_self" rel="noopener nofollow">Parietal Lobe</a>
+<br><a data-href="Frontal Lobe" href="frontal-lobe.html" class="internal-link" target="_self" rel="noopener nofollow">Frontal Lobe</a>
+<br><a data-href="Occipital Lobe" href="occipital-lobe.html" class="internal-link" target="_self" rel="noopener nofollow">Occipital Lobe</a> <br><a data-href="Newborn Capabilities" href="newborn-capabilities.html" class="internal-link" target="_self" rel="noopener nofollow">Newborn Capabilities</a>
+<br><a data-href="Motor Development" href="motor-development.html" class="internal-link" target="_self" rel="noopener nofollow">Motor Development</a>
+<br><a data-href="Perceptual Development" href="perceptual-development.html" class="internal-link" target="_self" rel="noopener nofollow">Perceptual Development</a>
+<br><a data-href="Language Development" href="language-development.html" class="internal-link" target="_self" rel="noopener nofollow">Language Development</a>
+<br><a data-href="Parenting Styles" href="parenting-styles.html" class="internal-link" target="_self" rel="noopener nofollow">Parenting Styles</a> <br><a data-href="Psychoanalytic Personality Theory" href="psychoanalytic-personality-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Psychoanalytic Personality Theory</a>
+<br><a data-href="Cognitive Personality Theory" href="cognitive-personality-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Cognitive Personality Theory</a>
+<br><a data-href="Humanistic Personality Theory" href="humanistic-personality-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Humanistic Personality Theory</a>
+<br><a data-href="Trait Theory" href="trait-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Trait Theory</a>
+<br><a data-href="Big Five Personality Model" href="big-five-personality-model.html" class="internal-link" target="_self" rel="noopener nofollow">Big Five Personality Model</a>
+<br><a data-href="Myers-Briggs Type Indicator" href="myers-briggs-type-indicator.html" class="internal-link" target="_self" rel="noopener nofollow">Myers-Briggs Type Indicator</a> <br><a data-href="Personality Assessment Methods" href="personality-assessment-methods.html" class="internal-link" target="_self" rel="noopener nofollow">Personality Assessment Methods</a>
+]]></description><link>index.html</link><guid isPermaLink="false">INDEX.md</guid><pubDate>Wed, 13 May 2026 17:09:21 GMT</pubDate></item><item><title><![CDATA[Sensation Basics]]></title><description><![CDATA[Definition: When a stimulus activates the receptors of a sense organ; awareness of changing conditions.A stimulus is something that causes a bodily response
+Stimulus: Physical energy in the environment
+Sensation: The conscious experience in the brain
+Not all stimuli become sensations — many are filtered out!
+]]></description><link>sensation-basics.html</link><guid isPermaLink="false">Sensation Basics.md</guid><pubDate>Wed, 13 May 2026 17:09:21 GMT</pubDate></item><item><title><![CDATA[Sensory Adaptation & Signal Detection]]></title><description><![CDATA[Definition: Getting used to a constant level of stimulation and only responding to changes away from that baselineDefinition: Our ability to detect stimuli depends on motivation, skill, and competing stimuli — not a fixed threshold
+Challenges: The traditional idea of absolute thresholds
+Proposes: Detection is influenced by psychological factors, not just sensory ability
+Airport Security Screening:
+High motivation to catch threats
+Competing stimuli (thousands of bags)
+Cost of miss &gt;&gt; cost of false alarm
+→ Results in lower threshold (more false alarms) Happen unconsciously
+Very fast
+Don't require effort
+Process multiple stimuli in parallel
+Example: Noticing your name in a crowded room Require conscious attention
+Slower
+Require mental effort
+Process one thing at a time (mostly)
+Example: Reading a difficult textbook passage
+]]></description><link>sensory-adaptation-&amp;-signal-detection.html</link><guid isPermaLink="false">Sensory Adaptation &amp; Signal Detection.md</guid><pubDate>Wed, 13 May 2026 17:09:21 GMT</pubDate></item><item><title><![CDATA[Sensory Thresholds]]></title><description><![CDATA[Definition: The weakest amount of a stimulus required to produce a sensation
+Detected 50% of the time at threshold
+Below threshold: no sensation
+Above threshold: sensation guaranteed
+Definition: Minimum amount of difference a person can detect between two stimuli
+Optometrist tests: Making you choose between slightly different lenses
+Restaurant volume: Barely hear when someone turns up music slightly
+Weight lifting: Can't tell difference between 100 lb and 101 lb, but can between 100 and 110 lb
+"The larger or stronger a stimulus, the greater the change needed to notice any difference"K = ΔI / IWhere:
+K = Constant (Weber's constant)
+ΔI = Smallest detectable change
+I = Original stimulus intensity
+We perceive differences proportionally, not absolutely!]]></description><link>sensory-thresholds.html</link><guid isPermaLink="false">Sensory Thresholds.md</guid><pubDate>Wed, 13 May 2026 17:09:21 GMT</pubDate></item><item><title><![CDATA[02 Sleeping & Dreaming]]></title><description><![CDATA[Definition: Biological clock that regulates sleep-wake cycles
+Experience hallucinations (falling or hearing your name) Duration: 5-10 minutes
+Transition between wakefulness and sleep Duration: 20 minutes
+Rhythmic brain waves
+Lowered body temperature
+Heart rate slows Transition between light and deep sleep Duration: 30 minutes
+Sleepwalking, sleeptalking, and night terrors occur during this stage Duration: 15-45 minutes
+Increased eye movement, breathing, and brain activity
+Muscles relax
+Dreaming, nightmares, and sleep paralysis occur Enter REM: Approximately 90 minutes into sleep
+Return to Stage II
+Cycles: 4-5 times per night
+Pattern: First REM is short, but they get progressively longer
+Pattern: Stage 4 becomes shorter as the night progresses
+One or more pauses in breathing or shallow breaths while sleepingPersistent problems falling and staying asleep
+Chronic, overwhelming daytime drowsiness
+Caused by brain's inability to regulate sleep-wake cycles normally Average: 4-7 dreams per night
+Negative emotions are very common
+Only dream about what we know (based on what we've seen before)
+Setup: 12-minute break, then "unusual use" creativity task
+Groups:
+Resting in quiet room
+Difficult short-term memory task
+Doing something boring
+No break
+Results: Boring task group came up with 41% more creative uses
+Allows for creativity and problem-solving
+Enables mental "incubation" of problems
+Definition: Dreaming while knowing you are dreaming
+Fantasy and adventure
+Overcoming fears
+Practice skills
+Creativity and problem-solving
+Mental health
+Bonus: Beginning to notice details → higher level of awareness in awake state as well
+]]></description><link>02-sleeping-&amp;-dreaming.html</link><guid isPermaLink="false">02 Sleeping &amp; Dreaming.md</guid><pubDate>Wed, 13 May 2026 17:08:13 GMT</pubDate></item><item><title><![CDATA[03 Altered States of Consciousness]]></title><description><![CDATA[Definition: Any condition which differs from a normal waking state
+Note: Induced changes are almost always temporaryProcess of learning to control bodily states using specialized machines
+Machines tell a person about subtle bodily changes including: Brain waves
+Heart rate
+Skin temperature
+Sweat-gland activity Person tries different thoughts and feelings while watching their effect on the body
+Thomas Budzyński (1973):
+Taught patients to relax muscles in the forehead to reduce tension headaches Treating PTSD
+ADHD
+Depression
+Anxiety
+Why is biofeedback considered an altered state of consciousness?Focusing of attention to clear one's mind and produce relaxation
+Lower blood pressure
+Lower heart rate
+Lower respiratory rate
+Help with stress, insomnia, etc. Mental repetition of a mantra (e.g., Om)
+Practice: Sit with eyes closed and meditate for 15-20 minutes 2× a day Focus on the present moment
+Attention on: body, breath, and thoughts Concentrate on breathing process
+Provides focus and sense of calm
+Narrowed focus of attention; people become highly suggestible to changes in behavior and thought
+Shifting Perceptions — Alter how reality is perceived
+Focus — On one small aspect of reality
+Relaxation — Forget outside anxiety
+Trust — Increase cooperation with suggestions Suggestion made during hypnosis that influences behavior after the session
+Helps to recall or suppress certain information Reduction of pain
+Mechanism: Helps patient relax and reduce anxiety → lessens perception of pain
+Clinical use: Habits and phobias
+]]></description><link>03-altered-states-of-consciousness.html</link><guid isPermaLink="false">03 Altered States of Consciousness.md</guid><pubDate>Wed, 13 May 2026 17:08:13 GMT</pubDate></item><item><title><![CDATA[04 Brain & Nervous System]]></title><description><![CDATA[Function: Controls the bodyNervous System
+├── Central Nervous System (CNS)
+│ ├── Brain
+│ └── Brain Stem
+└── Peripheral Nervous System (PNS) └── Branches of nerves off to the sides Electrical signals: Throughout the neuron
+Chemical signals: Neurotransmitters across the synapse
+Definition: Chemicals produced in the cell
+Stress
+Diet
+Toxins
+Genetics
+Drugs
+Alcohol
+Caffeine Acetylcholine → Alzheimer's disease
+Dopamine → Schizophrenia Dopamine → Parkinson's disease
+Serotonin → Depression Heartbeat
+Digestion
+Mood
+Sleep
+Concentration
+Weight
+After release, neurotransmitters have two options:
+Transmission: Information is passed to new cell
+Inhibition: Signal stops
+Definition: The outer layer of the brain made of grey matter
+Structure: Divided into four lobes
+Hearing
+Some speech
+Memory Function: Language comprehension
+Damage result: Wernicke's Aphasia Can speak well
+Cannot understand what is being said
+Produces "word salad" Sensory information (touch, temperature, pressure, etc.)
+Visuospatial processing (your position in space) The larger area of the brain a body part takes up, the more sensitive the area is
+Creates a distorted "sensory map" Planning
+Reasoning
+Movement (motor ability)
+Personality
+Working memory
+Creative thinking and problem-solving Key principle: The larger area of the brain a body part takes up, the more complex the movements are
+Creates a distorted motor "map" with disproportionate space for hands, lips, tongue Function: Language production
+Damage result: Can understand speech but cannot form words Visual processing
+Processes: color, form, motion, location
+Significance: First case showing different functions are located in different parts of the brainDetails: Metal tamping iron went through his frontal lobe; resulted in personality and behavioral changes]]></description><link>04-brain-&amp;-nervous-system.html</link><guid isPermaLink="false">04 Brain &amp; Nervous System.md</guid><pubDate>Wed, 13 May 2026 17:08:13 GMT</pubDate></item><item><title><![CDATA[05 Human Development]]></title><description><![CDATA[Complete protection from sensory overload
+Grasping reflex
+Rooting reflex
+Capabilities for basic survival
+Definition: Maturation — internally programmed growth of a child; plays a key role in progress of motor skills
+Around 6 months, babies start to understand depth perception
+Demonstrated through visual cliff apparatus (apparent drop-off)
+Between 2 and 5 years: typical child learns an average of 10 words per day (nearly 1 word every hour awake)
+Imitation → 2. Overgeneralization → 3. Rule-governed language Nature vs. Nurture: Which plays a larger role?
+Critical Period: Sensitive period early in life in which language acquisition is easier "Bosses"
+No need to explain actions or demands
+Child has no right to question Kids have final say
+No rules/demands
+No expectations
+Parents give up their parenting role Self-centered
+Uncommitted to being a parent
+Distant from child Hover over their children
+Want to know and have a say in every aspect of child's life
+Pay very close attention Kids participate in decisions
+Parents have right to veto
+Discussions occur
+Key Factors:
+Establishment of limits (structure)
+Warmth of support (love)
+Developmental Gains:
+Development of responsibility
+Parents viewed as sources of love and respect
+Development of cooperative independence
+]]></description><link>05-human-development.html</link><guid isPermaLink="false">05 Human Development.md</guid><pubDate>Wed, 13 May 2026 17:08:13 GMT</pubDate></item><item><title><![CDATA[06 Personality Theories]]></title><description><![CDATA[Tests where individuals interpret ambiguous stimuli, revealing their personality
+Interpretation of inkblot images
+Reveals unconscious processes and personality patterns Individuals create stories about ambiguous images
+Reveals themes, concerns, and motivations Personal Unconscious: Individual repressed thoughts and experiences
+Collective Unconscious: Inherited instincts, urges, and memories of all humans Definition: Inherited ideas based on ancestors' experiences
+Function: Shape one's perception of the world
+Examples: The Hero, The Shadow, The Wise Old Man Looked for personality of an aggressive person
+Demonstrated that aggression can be learned through observation and modeling
+Ideas of oneself, of others, and of the world shape personalities
+Definition: Mental representation of people, events, and concepts
+Function: Determine how we perceive things and respond to them
+Strive for self-actualization (one's unique potential)
+Developed concept of self-actualization
+Believed in human potential and growth Focused on "The Self"
+Emphasized unconditional positive regard Realistically oriented
+Accept the world as it is
+Spontaneous
+Creative
+Resist conformity
+Independent Definition: View of yourself based on positive interactions
+Conditions of worth: Conditions one must meet to feel positivity about oneself
+Unconditional positive regard: Perception that significant others value you in your entirety Everyone possesses all traits
+Traits can be quantified
+The amount of each trait determines your personality
+Most well-known trait theory — central for all peopleBased on Carl Jung's writingsJung presented 4 ways in which people experience the world:
+16 types total (2^4 combinations)
+Preferences: Not better or worse; just different styles
+Examples: INTJ, ENFP, ISTJ, ENFJ, etc.]]></description><link>06-personality-theories.html</link><guid isPermaLink="false">06 Personality Theories.md</guid><pubDate>Wed, 13 May 2026 17:08:13 GMT</pubDate></item></channel></rss>
